@@ -1,0 +1,27 @@
+.reveal section img {
+  background:none; 
+  border:none; 
+  box-shadow:none;
+  }
+
+.reveal section small {
+  text-align: left;
+  }
+
+.reveal section h1 {
+  font-size: 2em;
+}
+
+.reveal section h2 {
+  font-size: 1.5em;
+}
+
+.reveal section blockquote {
+	font-size: 0.6em;
+	text-align: left;
+}
+
+.reveal section caption {
+  text-align: left;
+  font-size: 0.1em;
+  }

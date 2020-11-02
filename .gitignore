@@ -21,7 +21,10 @@ materialy_do_druku/
 WEJSCIOWKI/
 
 #nie śledź folderu z Krzysia zajęciami
-/krzysia_zajecia
+krzysia_zajecia/
+
+#nie śledź folderu z materialami mmajk
+mmajk/
 
 # Created by https://www.toptal.com/developers/gitignore/api/macos,sublimetext,latex,r
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,sublimetext,latex,r

@@ -132,6 +132,12 @@ Dobra teoria naukowa powinna:
     
 ## Rozumowania abdukcyjne
 
+Definicja za [Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/abduction/)
+
+>"Wnioskowanie dla najlepszego wyjaśnienia". Forma rozumowania wyjaśniającego, wykorzystywanego do (I) generowania lub (II) uzasadniania hipotez.
+
+## Rozumowania abdukcyjne
+
 - Codziennie rozumujemy abdukcyjnie :) plemiona zbieraczy i antylopy, szereg przykładów z życia codziennego
 - Np. w trakcie gry w bilard obserwujemy poruszającą się czarną bilę 
   -   Możemy założyć, że porusza się ona, ponieważ została uderzona przez białą bilę. Nie jest to zawsze prawdziwe założenie, ale pozwala nam orientować się w danym zjawisku

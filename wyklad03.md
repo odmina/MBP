@@ -6,7 +6,7 @@ title: Teorie naukowe, hipotezy i falsyfikacja (1)
 
 ## Metoda naukowa
 
-Zestaw założeń, zasad i procedur, których naukowcy używają, żeby prowadzić badania empiryczne (Stangor, 2019).
+Zestaw założeń, zasad i procedur, których naukowcy używają, żeby prowadzić badania empiryczne [@stangor2014].
 
 -------------
 
@@ -70,7 +70,7 @@ Teoria jest naukowa wtedy, gdy istnieje *hipotetyczna możliwość dowiedzenia j
 >zdarzenia, opisujące zachodzące między nimi związki
 >i wyjaśniające występowanie tych zdarzeń.
 
-## Różne poziomy wyjaśniania ludzkiego zachowania (Stangor, 2019)
+## Różne poziomy wyjaśniania ludzkiego zachowania [@stangor2014]
 
 - Biologiczny
 - Interpersonalny
@@ -94,6 +94,14 @@ Dobra teoria naukowa powinna:
 
 # Rozumowanie w nauce
 
+## Różne rodzaje rozumowań
+
+- Dedukcyjne – wnioskowanie o konkluzjach na podstawie logicznych przesłanek
+  - Prawo sylogizmu - jeśli A->B i  B->C to A->C
+  - np.: Wszyscy ludzie są śmiertelni. Elvis Presley jest człowiekiem. Elvis Presley jest śmiertelny.
+- Indukcyjne
+- Abdukcyjne – obserwujemy zjawisko i poszukujemy jego wyjaśnienia (rozumowanie post hoc)
+
 ## Nauka z perspektywy kurczaków czyli problem indukcji
 
 - Kurczak co rano obserwuje jak hodowca przychodzi i wydaje jedzenie
@@ -108,44 +116,47 @@ Dobra teoria naukowa powinna:
     - Jeśli ktoś umiera, to nigdy nie jestem to ja.
 - Czy można orzec o prawdziwości teorii na podstawie danych empirycznych, które ją potwierdzają?
 
+## Problem indukcji
 
-## Inny sposób na poradzenie sobie z problemem indukcji
+- Problem filozoficzny (D.Hume) – nie ma logicznego uzasadnienia dla przewidywania przyszłości tylko na podstawie wydarzeń z przeszłości
+- Nie spostrzegamy zależności przyczynowo-skutkowych, a jedynie następstwo pewnych zdarzeń, czyli widzimy, że A następuje przed B, ale nie możemy jedynie na tej podstawie wnosić, że A powoduje B
+
+------------
+
+- Nie czyniąc dodatkowych założeń, nie mamy również podstaw, by twierdzić, że jeżeli A w przeszłości współwystępowało z B, to w przyszłości również tak będzie
+
+## Jeden ze sposobów na poradzenie sobie z problemem indukcji
 
 - To co otrzymujemy na drodze indukcji to nie dowód na prawdziwość teorii tylko jej uprawdopodobnienie
-- Teorie naukowe w kategoriach probabilistycznych
-- Problem filozoficzny (D.Hume) – nie ma logicznego uzasadnienia dla przewidywania przyszłości tylko na podstawie wydarzeń z przeszłości
-
-
-## Podział rozumowań
-
-- Dedukcyjne – wnioskowanie o konkluzjach na podstawie logicznych przesłanek
-  - Prawo sylogizmu - jeśli A->B i  B->C to A->C
-  - np.: Wszyscy ludzie są śmiertelni. Elvis Presley jest człowiekiem. Elvis Presley jest śmiertelny.
-- Indukcyjne
-- Abdukcyjne – obserwujemy zjawisko i poszukujemy jego wyjaśnienia (rozumowanie post hoc)
-    
+- Teorie naukowe można zatem traktować probabilistycznie, jako określające najbardziej prawdopodobne, w świetle posiadanej wiedzy, relacje między zjawiskami
     
 ## Rozumowania abdukcyjne
 
 - Codziennie rozumujemy abdukcyjnie :) plemiona zbieraczy i antylopy, szereg przykładów z życia codziennego
-- W trakcie gry w bilard obserwujemy poruszającą się czarną bilę 
-- Możemy założyć, że porusza się ona, ponieważ została uderzona przez białą bilę. Nie jest to zawsze prawdziwe założenie, ale pozwala nam orientować się w danym zjawisku
+- Np. w trakcie gry w bilard obserwujemy poruszającą się czarną bilę 
+  -   Możemy założyć, że porusza się ona, ponieważ została uderzona przez białą bilę. Nie jest to zawsze prawdziwe założenie, ale pozwala nam orientować się w danym zjawisku
 
 ------- 
 
-- Naukowcy formułują prawdopodobne hipotezy na temat świata 
-- Hipotez może być wiele – problem brzytwy Ockhama
+- Naukowcy formułują prawdopodobne hipotezy na temat świata, czyli możliwe wyjaśnienia obserwowanych zjawisk 
+- Hipotez może być wiele – problem wyboru dobrej hipotezy: brzytwa Ockhama, falsyfikowalność
 
 # Podsumowanie
 
 ## W skrócie
 
-- teorie naukowe w psychologii pozwalają (lub powinny pozwalać) na opisanie, przewidywanie i wyjaśnienie (ludzkiego) zachowania
-- teorie w psychologii mogą wyjaśniać zachowania na różnym poziomie
-- teorie powinny być oszczędne, możliwie ogólne, stymulujące dalsze badania i falsyfikowalne
-- rozumowanie indukcyjne może nam pozwolić na uprawdopodobnienie naszych teorii, ale ma swoje ograniczenia
+- Teorie naukowe w psychologii pozwalają (lub powinny pozwalać) na opisanie, przewidywanie i wyjaśnienie (ludzkiego) zachowania.
+- Teorie w psychologii mogą wyjaśniać zachowania na różnym poziomie.
+- Teorie powinny być oszczędne, możliwie ogólne, stymulujące dalsze badania i falsyfikowalne.
+
+----------
+
+- Rozumowanie indukcyjne może nam pozwolić na uprawdopodobnienie naszych teorii, ale ma swoje ograniczenia, ponieważ nie mamy podstaw, by twierdzić, że współwystępujące zjawiska są przyczynowo związane lub będą nadal współwystępować w przyszłości.
 
 ## Literatura
+
+<small>
+
 
 
 

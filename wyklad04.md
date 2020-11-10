@@ -118,7 +118,7 @@ title: Teorie naukowe, hipotezy i falsyfikacja (2)
 
 ## Związek obserwacji z teorią
 
-- Gwiazd na obrazku widać 5. Jednak wg. teorii względności Einsteina są to de facto tylko dwa obiekty!
+- Gwiazd na obrazku widać 5. Jednak wg teorii względności Einsteina są to de facto tylko dwa obiekty!
 - Nawet w obrębie jednej dziedziny nauki obserwacje mogą się różnić w zależności od przyjętego modelu teoretycznego. 
 
 ## Obserwacja zachowania a teoria
@@ -136,43 +136,9 @@ title: Teorie naukowe, hipotezy i falsyfikacja (2)
 
 ## Jak wygląda to z perspektywy modelu poznanania naukowego opierającego się na falsyfikacji?
 
-![](img/conjectures.png)
+![](img/conjectures.png){#id .class height=400px}
 
 <small>Na podstawie: Popper, K., *Conjectures and Refutations: The Growth of Scientific Knowledge* [-@popper2020conjectures]</small>
-
-# Paradygmaty i rewolucje w nauce
-
-## Rozwój nauki - paradygmaty (Thomas Kuhn)
-
-- Thomas Samuel Kuhn (1922-1996), amerykański fizyk, historyk, filozof nauki, autor książki The Structure of Scientific Revolutions (1962)
-- Wcześniej sądzono, że rozwój nauki przebiega poprzez akumulację wiedzy
-- Kuhn dowodzi, że w nauce dochodzi do rewolucji, zwanych zmianami paradygmatów (paradigm shift)
-
-## Paradygmaty
-
-Paradygmat to ogólnie uznawany (w danym momencie) model problemów i rozwiązań, który dla grupy naukowców definiuje:
-
-- Co powinno być badane
-- Jakiego rodzaju pytania mogą być zadawane
-- Jaka jest struktura takich pytań
-- Jaka jest podstawowa teoria w danej dziedzinie
-- Jak należy interpretować wyniki
-- W jaki sposób i jakimi metodami przeprowadzać badania
-
-## Zmiany paradygmatów w historii
-
-- Przewrót kopernikański
-- Principia Mathematica Newtona i rozwój fizyki
-- Szczególna i ogólna teoria względności Einsteina
-- Rozwój mechaniki kwantowej
-
--------------------
-
-- Mniejsze (?) zmiany na naszych oczach:
-    - Opisanie genomu ludzkiego
-    - fMRI i inne techniki neuroobrazowania – rozwój tzw. cognitive neuroscience
-    - Odkrycie fal grawitacyjnych
-    - CRISPR Cas9
 
 # Podsumowanie
 
@@ -186,10 +152,9 @@ Paradygmat to ogólnie uznawany (w danym momencie) model problemów i rozwiąza�
 
 - Teorie naukowe determinują to, jak interpretujemy obserowowane zjawiska
 - Praca naukowa polega na empirycznym werifikowaniu hipotez postawionych na podstawie teorii
-- Jeżeli nasze obserwacje prowadzą do odrzucenia uznanej teorii, możemy mówić o rewolucji w nauce
+- Nasze obserwacje mogą prowadzić do odrzucenia uznanej teorii
 
 ## Literatura
-
 
 <small>
 

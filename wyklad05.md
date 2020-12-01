@@ -120,9 +120,13 @@ I to o niej uczymy się na metodologii :)
 ## Stawianie hipotez
 
 - Hipoteza badawcza - konkretna, falsyfikowalna predykcja na temat związku pomiędzy dwiema lub więcej *zmiennymi*
-- Hipoteza zakłada *związek* pomiędzy zmiennymi, może mówić również o *kierunku* tego związku
 - Związek postulowany przez hipotezę *nie zawsze będzie związkiem przyczynowym*!
 - Najprostsze hipotezy łączą dwie zmienne, ale może być więcej
+
+## Hipotezy kierunkowe
+
+- Hipoteza zakłada *związek* pomiędzy zmiennymi, może mówić również o *kierunku* tego związku...
+- ...i wtedy jest to hipoteza kierunkowa
 
 ## Przykłady hipotez badawczych
 
@@ -135,6 +139,22 @@ I to o niej uczymy się na metodologii :)
 
 - Musimy wiedzieć to *zanim* rozpoczniemy badania i uzyskamy wyniki
 - Pomagają nam w tym *metody statystyczne* i przyjęte poziomy ufności
+- Cztery powody dla których badanie "nie wychodzi" - jakie?
+
+## Powody, dla których nie obserwujemy spodziewanego efektu
+
+- efektu nie ma (a przynajmniej nie ma go w tej konkretnej sytuacji): [przykład fig. 1D](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5628077/)  
+- efekt jest, ale niewielki - okazałby się *istotny statystycznie* na większej grupie, ale uwaga: co mówi nam o świecie niewielki efekt?
+
+-------------------
+
+- coś źle robimy - warsztat badacza
+- robimy coś inaczej, niż autorzy, którzy zaobserwowali wcześniej interesujący nas efekt [tu przykład (na początku)](https://www.nature.com/articles/d41586-020-02142-6)  
+- próbujemy zreplikować zdawkowo opisane badanie lub korzystamy z metody, która była nieprecyzyjnie opisana (czyli robimy coś nie tak, ale nie wiemy co, bo autor nie podzielił się tym z nami) 
+
+## Systematyczny przegląd i metaanaliza 
+
+To tylko zapowiedź :) właśnie te dwa rodzaje artykułów naukowych pozwalają nam mierzyć się ze wspomnianymi problemami.
 
 ## Etapy
 
@@ -146,15 +166,58 @@ I to o niej uczymy się na metodologii :)
 
 # Jak wygląda nasze badanie
 
-## Osoby badane
+## Grupa kontrolna
 
 - By zweryfikować jakąkolwiek hipotezę, potrzebujemy *grupy kontrolnej*.
-- Decyzję o tym, ile osób zbadamy, musimy podjąć *zanim* rozpoczniemy badania
+- Co moglibyśmy powiedzieć bez grupy kontrolnej i dlaczego niewiele
+  - [Wyniki eksperymentu Ascha](https://play.google.com/books/reader?id=DGjQAAAAMAAJ&hl=en&pg=GBS.PA181)
+
+## Ile osób badanych?
+
+- Decyzję o tym, ile osób zbadamy musimy podjąć *przed* rozpoczęciem badań.
+- Inaczej ryzykujemy, że ktoś zarzuci nam, niekiedy słusznie, że badaliśmy aż zaobserwowaliśmy zgodny z hipotezą efekt.
 
 ## Narzędzia
 
 - Powinny pozwalać nam zmierzyć to, co w istocie chcieliśmy zmierzyć (trafność)
 - Powinny mierzyć to możliwie dokładnie (rzetelność)
+
+# Podstawowe rodzaje badań w psychologii
+
+## Prosty podział wg dwóch kryteriów
+
+- Czy to my manipulujemy zmienną niezależną?
+- Czy to my kontrolujemy dobór do grup?
+
+## Kontrolujemy zmienną niezależną, kontrolujemy dobór do grup
+
+- Eksperyment "właściwy", np. eksperyment Ascha
+- Co się stanie, jeżeli źle dobierzemy osoby do grup i grupy wyjściowo będą się różnić?
+
+## Manipulujemy zmienną niezależną, nie kontrolujemy doboru do grup
+
+- Quasi-eksperyment, np. badanie Langer i Rodin dotyczące wzbudzania odpowiedzialności
+- Plany szeregów czasowych
+- Plany ABAB
+
+## Nie manipulujemy zmienną niezależną, nie kontrolujemy doboru do grup
+
+- porównanie grup, np. ryzyko podejmowane przez kobiety i mężczyzn podczas zmierzania na autobus
+- badania korelacyjne, np. związek między różnymi cechami osobowości
+- plany:
+  + badania poprzeczne
+  + sukcesywnych prób niezależnych
+  + badania podłużne
+
+## Gdy nie kontrolujemy doboru do grup
+
+- Nie mamy wpływu na zmienne zakłócające związane z charakterystyką badanych i ich historią
+- W efekcie nie możemy w pełni przypisać obserwowanego efektu zmieniającym się poziomom zmiennej niezależnej
+
+## Gdy nie manipulujemy sami zmienną niezależną
+
+- Nie mamy żadnej gwarancji, że nie zaszły inne równie / bardziej istotne zmiany
+- Nie możemy w związku z tym na podstawie naszego badania wnioskować o zależności przyczynowo-skutkowej między zmiennymi
 
 # Podsumowanie
 
@@ -163,3 +226,7 @@ I to o niej uczymy się na metodologii :)
 - Teoriom w nauce towarzyszą paradygmaty, które określają, jakie problemy podejmowane są w danej dziedzinie i jak wyglądają badania, które na te problemy odpowiadają.
 - Realizując badania empiryczne korzystamy z definicji operacyjnych zmiennych, do których odnoszą się nasze hipotezy.
 - Lwią część pracy badawczej wykonujemy tak naprawdę, *zanim* rozpoczniemy badania.
+
+## Literatura
+
+<small>

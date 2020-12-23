@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Małgorzata Basińska">
+  <title>Istotność statystyczna - podejście 1</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/night.css" id="theme">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Istotność statystyczna - podejście 1</h1>
+  <p class="author">Małgorzata Basińska</p>
+</section>
+
+<section>
+<section id="słowem-przypomnienia" class="title-slide slide level1">
+<h1>Słowem przypomnienia</h1>
+
+</section>
+<section id="próba-i-populacja" class="slide level2">
+<h2>Próba i populacja</h2>
+<ul>
+<li><em>Populacja</em> to ogół osób, do których odnosi się dana teoria (np. populacja wszystkich ludzi, populacja kobiet, populacja niemowląt).</li>
+<li><em>Próba</em> to ta część populacji, którą objęliśmy badaniem</li>
+</ul>
+</section>
+<section id="dobór-probabilistyczny-vs-nieprobabilistyczny" class="slide level2">
+<h2>Dobór probabilistyczny vs nieprobabilistyczny</h2>
+<ul>
+<li>Proces wyłaniania próby z populacji nazywamy <em>doborem próby</em></li>
+<li><em>Dobór próby</em> może być probabilistyczny lub nieprobabilistyczny<br />
+</li>
+<li>Dobór propabilistyczny, czyli losowy, zakłada, że dysponujemy jakimś <em>operatem losowania</em> dla badanej populacji i z niego <strong>losowo</strong> wyłaniamy osoby badane</li>
+<li>Wszystkie metody statystyczne, jakich będziecie używać zakładają, że próba była dobrana losowo</li>
+</ul>
+</section>
+<section id="wybrane-metody-probabilistyczne" class="slide level2">
+<h2>(Wybrane) metody probabilistyczne</h2>
+<ul>
+<li>Dobór prosty losowy (<em>simple random sampling</em>)</li>
+<li>Dobór warstwowy (<em>stratified sampling</em>)</li>
+<li>Dobór systematyczny (<em>systematic sampling</em>)</li>
+</ul>
+</section>
+<section id="wybrane-metody-nieprobabilistyczne" class="slide level2">
+<h2>(Wybrane) metody nieprobabilistyczne</h2>
+<ul>
+<li>Dobór przypadkowy (<em>convenience sampling</em>)</li>
+<li>Dobór kwotowy (<em>quota sampling</em>)</li>
+<li>Kula śniegowa (<em>snowball sampling</em>)</li>
+</ul>
+</section>
+<section id="ok-ale-w-większości-badań-psychologicznych-mamy-ochotników" class="slide level2">
+<h2>Ok, ale w większości badań psychologicznych mamy ochotników!</h2>
+<ul>
+<li>Z oczywistych względów możemy zbadać tylko osoby, które chcą wziąć udział w naszym badaniu</li>
+<li>MOŻEMY SENSOWNIE KORZYSTAĆ Z WYNIKÓW TAKICH BADAŃ…</li>
+<li>…przy czym zawsze musimy zadać sobie pytanie, w jaki sposób dobór próby mógł wpłynąć na wyniki</li>
+</ul>
+</section>
+<section id="sampling-bias" class="slide level2">
+<h2>Sampling bias</h2>
+<ul>
+<li>Z <em>sampling bias</em> w doborze próby mamy do czynienia, jeżeli jacyś członkowie naszej docelowej populacji mają mniejszą/większą szansę na udział w badaniu.</li>
+</ul>
+</section></section>
+<section>
+<section id="istota-istotności-statycznej" class="title-slide slide level1">
+<h1>Istota istotności statycznej</h1>
+
+</section>
+<section id="jak-myślicie-czy-jeżeli-między-jakimiś-dwoma-populacjami-nie-ma-żadnych-różnic-wylosujemy-próbę-poprawnie-bez-żadnego-bias-to-możemy-w-badaniu-zaobserwować-różnicę-między-próbami-wylosowanymi-z-tych-populacji" class="slide level2">
+<h2>Jak myślicie, czy jeżeli między jakimiś dwoma populacjami nie ma żadnych różnic, wylosujemy próbę poprawnie, bez żadnego bias, to możemy w badaniu zaobserwować różnicę między próbami wylosowanymi z tych populacji?</h2>
+</section>
+<section id="bardzo-prosty-przykład-na-to-że-nawet-jeżeli-w-populacji-nie-ma-różnic-między-grupami-możemy-w-badaniu-taką-różnicę-znaleźć" class="slide level2">
+<h2>Bardzo prosty przykład na to, że nawet jeżeli w populacji nie ma różnic między grupami, możemy w badaniu taką różnicę znaleźć</h2>
+<p>Wyobraźcie sobie, że mamy populację 100 reniferów Świętego Mikołaja, w której jest 50 <strong>miziołków</strong> i 50 <strong>buziołków</strong>. Średni czas, w jakim renifery mogą dostarczyć worek prezentów z Rovaniemi i Gdańska jest taki sam, niezależnie od odmiany (miziołki / buziołki).</p>
+</section>
+<section class="slide level2">
+
+<p><em>UWAGA: w miejsce <strong>miziołków</strong> i <strong>buziołków</strong> możesz wstawić dowolne insteresujące Cię grupy :) w miejsce <strong>czasu dostarczenia prezentu</strong> możesz wstawić dowolną cechę.</em></p>
+</section>
+<section id="miziołek" class="slide level2">
+<h2>Miziołek</h2>
+<figure>
+<img data-src="img/renifer1.jpg" height="350" alt="Miziołek" /><figcaption aria-hidden="true">Miziołek</figcaption>
+</figure>
+<p><small>Autor: Are G Nilsen, Licencja: <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, ściągnięte z <a href="https://en.wikipedia.org/wiki/Reindeer#/media/File:Reinbukken_på_frisk_grønt_beite._-_panoramio.jpg">wikipedii</a></small></p>
+</section>
+<section id="buziołek" class="slide level2">
+<h2>Buziołek</h2>
+<figure>
+<img data-src="img/renifer2.jpg" height="350" alt="Miziołek" /><figcaption aria-hidden="true">Miziołek</figcaption>
+</figure>
+<p><small>Autor: Ludovic Rivallain, Licencja: <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, ściągnięte z <a href="https://en.wikipedia.org/wiki/Reindeer#/media/File:Rennes_d&#39;élevage,_mais_en_liberté,_près_de_Suomussalmi._-_panoramio.jpg">wikipedii</a></small></p>
+</section>
+<section id="rozkład-wyników---miziołki" class="slide level2">
+<h2>Rozkład wyników - miziołki</h2>
+<figure>
+<img data-src="figure/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2" /><figcaption aria-hidden="true">plot of chunk unnamed-chunk-2</figcaption>
+</figure>
+</section>
+<section id="rozkład-wyników---buziolki" class="slide level2">
+<h2>Rozkład wyników - buziolki</h2>
+<figure>
+<img data-src="figure/unnamed-chunk-3-1.png" alt="plot of chunk unnamed-chunk-3" /><figcaption aria-hidden="true">plot of chunk unnamed-chunk-3</figcaption>
+</figure>
+</section>
+<section id="podstawowe-statystyki-w-obydwu-grupach" class="slide level2">
+<h2>Podstawowe statystyki w obydwu grupach</h2>
+<ul>
+<li>Średnia: 15.16</li>
+<li>Minimum: 6</li>
+<li>Maximum: 25</li>
+</ul>
+</section>
+<section id="na-ile-sposobów-możemy-wybrać-3-z-50-miziołków-buziołków" class="slide level2">
+<h2>Na ile sposobów możemy wybrać 3 z 50 miziołków / buziołków?</h2>
+<div>
+<p>19600</p>
+</div>
+</section>
+<section id="jaka-będzie-średnia-dla-3-z-50-miziołków-buziołków" class="slide level2">
+<h2>Jaka będzie średnia dla 3 z 50 miziołków / buziołków?</h2>
+<figure>
+<img data-src="figure/unnamed-chunk-4-1.png" alt="plot of chunk unnamed-chunk-4" /><figcaption aria-hidden="true">plot of chunk unnamed-chunk-4</figcaption>
+</figure>
+</section>
+<section id="na-ile-sposobów-możemy-wybrać-5-z-50-miziołków-buziołków" class="slide level2">
+<h2>Na ile sposobów możemy wybrać 5 z 50 miziołków / buziołków?</h2>
+<div>
+<ul>
+<li class="fragment">Na 2118760 sposobów</li>
+</ul>
+</div>
+</section>
+<section id="jaka-będzie-średnia-dla-5-z-50-miziołków-buziołków" class="slide level2">
+<h2>Jaka będzie średnia dla 5 z 50 miziołków / buziołków?</h2>
+<figure>
+<img data-src="figure/unnamed-chunk-5-1.png" alt="plot of chunk unnamed-chunk-5" /><figcaption aria-hidden="true">plot of chunk unnamed-chunk-5</figcaption>
+</figure>
+</section>
+<section id="na-ile-sposobów-możemy-wybrać-7-z-50-miziołków-buziołków" class="slide level2">
+<h2>Na ile sposobów możemy wybrać 7 z 50 miziołków / buziołków?</h2>
+<div>
+<ul>
+<li class="fragment">Na 99884400 sposobów99884400</li>
+</ul>
+</div>
+</section>
+<section id="jaka-będzie-średnia-dla-7-z-50-miziołków-buziołków" class="slide level2">
+<h2>Jaka będzie średnia dla 7 z 50 miziołków / buziołków?</h2>
+<p><em>Stworzenie 99884400 7 elementowych zbiorów wybranych z 50 elementowego zbioru miziołków i policzenie średniej dla każdego trwało tak długo, że nie chciało mi się czekać…</em></p>
+</section>
+<section id="skupmy-się-na-badaniu-w-którym-losujemy-3-miziołki-i-3-buziołki" class="slide level2">
+<h2>Skupmy się na badaniu, w którym losujemy 3 miziołki i 3 buziołki</h2>
+<figure>
+<img data-src="figure/unnamed-chunk-6-1.png" alt="plot of chunk unnamed-chunk-6" /><figcaption aria-hidden="true">plot of chunk unnamed-chunk-6</figcaption>
+</figure>
+</section>
+<section id="jakie-jest-prawdopodobieństwo-że-w-naszym-badaniu-gdzie-n-3-wystąpi-średnia-mniejsza-od-10-albo-większa-od-20" class="slide level2">
+<h2>Jakie jest prawdopodobieństwo, że w naszym badaniu, gdzie n = 3 wystąpi średnia mniejsza od 10 albo większa od 20?</h2>
+<ul>
+<li>Średnia mniejsza od 10: 0.0358673</li>
+<li>Średnia większa od 20: 0.0467857</li>
+</ul>
+</section>
+<section id="a-jakie-jest-prawdopodobieństwo-takiego-scenariusza" class="slide level2">
+<h2>A jakie jest prawdopodobieństwo takiego scenariusza?</h2>
+<ul>
+<li>Wylosowaliśmy trzy miziołki i uzyskaliśmy dla nich średnią mniejszą od 10.</li>
+<li>Wylosowaliśmy trzy buziołki i uzyskaliśmy dla nich średnią większą od 20.</li>
+<li>Pamiętamy, że grupy tak naprawdę się nie różnią i dla obydwu średnia jest równa około 15!!!!</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<p>0.0016781</p>
+</section>
+<section id="a-jakie-jest-prawdopodobieństwo-takiego-scenariusza-1" class="slide level2">
+<h2>A jakie jest prawdopodobieństwo takiego scenariusza?</h2>
+<ul>
+<li>Wylosowaliśmy trzy miziołki i uzyskaliśmy dla nich średnią mniejszą od 13.</li>
+<li>Wylosowaliśmy trzy buziołki i uzyskaliśmy dla nich średnią większą od 17.</li>
+</ul>
+</section>
+<section id="mean-13-mean-17" class="slide level2">
+<h2>mean &lt; 13 &amp; mean &gt; 17</h2>
+<ul>
+<li>Średnia mniejsza od 13: 0.2270918</li>
+<li>Średnia większa od 17: 0.2578061</li>
+<li>Prawdopodobieństwo, że dla miziołków średnia &lt; 13, a dla buziołków &gt; 17: 0.0585457</li>
+</ul>
+</section>
+<section id="a-jakie-jest-prawdopodobieństwo-takiego-scenariusza-2" class="slide level2">
+<h2>A jakie jest prawdopodobieństwo takiego scenariusza?</h2>
+<ul>
+<li>Wylosowaliśmy trzy miziołki i uzyskaliśmy dla nich średnią mniejszą od 13,5.</li>
+<li>Wylosowaliśmy trzy buziołki i uzyskaliśmy dla nich średnią większą od 16,5.</li>
+</ul>
+</section>
+<section id="mean-135-mean-165" class="slide level2">
+<h2>mean &lt; 13,5 &amp; mean &gt; 16,5</h2>
+<ul>
+<li>Średnia mniejsza od 13,5: 0.2968367</li>
+<li>Średnia większa od 16,5: 0.3323469</li>
+<li>Prawdopodobieństwo, że dla miziołków średnia &lt; 13,5, a dla buziołków &gt; 16,5: 0.0986528</li>
+</ul>
+</section>
+<section id="ok-a-co-jeżeli-zbadaliśmy-więcej-reniferów-np.-5" class="slide level2">
+<h2>Ok, a co jeżeli zbadaliśmy więcej reniferów? Np. 5?</h2>
+<p>W naszym przykładzie w rzeczywistości nie ma różnic między miziołkami i buziołkami. Czy prawdopodobieństwo, że przez przypadek zaobserwujemy różnicę na poziomie 3 punktów będzie większe czy mniejsze, kiedy zbadamy więcej reniferów (5 zamiast 3)?</p>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Średnia mniejsza od 13,5: 0.2366134</li>
+<li>Średnia większa od 16,5: 0.2810757</li>
+<li>Prawdopodobieństwo, że dla miziołków średnia &lt; 13,5, a dla buziołków &gt; 16,5: 0.0665063</li>
+</ul>
+</section>
+<section id="vs-5-reniferów-w-grupie" class="slide level2">
+<h2>3 vs 5 reniferów w grupie</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Średnie w grupach</th>
+<th>3 renifery</th>
+<th>5 reniferów</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>10 i 20</td>
+<td>0.0016781</td>
+<td>0.0001002</td>
+</tr>
+<tr class="even">
+<td>13 i 17</td>
+<td>0.0585457</td>
+<td>0.0326059</td>
+</tr>
+<tr class="odd">
+<td>13,5 i 16,5</td>
+<td>0.0986528</td>
+<td>0.0665063</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="wnioski-z-tej-prostej-symulacji" class="slide level2">
+<h2>Wnioski z tej prostej symulacji</h2>
+<ul>
+<li>Nawet jeżeli dwie grupy się nie różnią, możemy w badaniu uzyskać jakąś różnicę między wylosowanymi z nich próbami.</li>
+<li>Jesteśmy w stanie oszacować prawdopodobieństwo wystąpienia różnicy o określonej wielkości (choć w praktyce jest to nieco bardziej skomplikowane niż w podanym przykładzie).</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Im mniejsza różnica (słabsza zależność), tym większe prawdopodobieństwo, że ją uzyskamy w badaniu przez przypadek, nawet jeżeli w populacji nie ma różnic między grupami.</li>
+<li>Im więcej osób w naszej próbie, tym mniejsze prawdopodobieństwo, że przez przypadek zaobserwowaliśmy zależność, której nie ma (zalecam jednak ostrożność).</li>
+</ul>
+</section>
+<section id="wartość-p" class="slide level2">
+<h2>Wartość <em>p</em></h2>
+<ul>
+<li>Wartość <em>p</em> (<em>p value</em>), z którą stykacie się analizując wyniki badań oznacza prawdopodbieństwo z jakim obserwowany w badaniu wynik mógł pojawić się przez przypadek w sytuacji, w której zaoserwowana zależność w populacji nie występuje.</li>
+</ul>
+</section></section>
+<section>
+<section id="podsumowanie" class="title-slide slide level1">
+<h1>Podsumowanie</h1>
+
+</section>
+<section id="ważny-wniosek" class="slide level2">
+<h2>Ważny wniosek</h2>
+<ul>
+<li>Nawet jeżeli w interesującej nas populacji nie ma żadnej zależności między dwoma zmiennymi, możemy zaobserwować taką zależność nawet w doskonale zaprojektowanym badaniu.</li>
+<li>Dzieje się tak ze względu na to, że nie badamy całej populacji, a jedynie jej niewielką część (próbę) i możemy wystąpić sytuacja, w której zależność pojawi się przez przypadek.</li>
+<li>To jak duże jest prawdopodobieństwo, że obserwowana przez nas wartość pojawiła się przez przypadek określa wartość p.</li>
+</ul>
+</section>
+<section id="praktyczne-pytania-które-odbiorca-badania-powinien-sobie-zadać" class="slide level2">
+<h2>Praktyczne pytania, które odbiorca badania powinien sobie zadać</h2>
+<ul>
+<li>Jaki jest poziom istotności statystycznej uzyskanych wyników? Czy dla Ciebie, jako odbiorcy badania jest satysfakcjonujący?</li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  // reveal.js plugins
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/math/math.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>

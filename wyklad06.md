@@ -58,14 +58,14 @@ ppl <- ppl_imperial %>%
 
 ## Rozkład wzrostu w próbie
 
-```{r echo=FALSE}
+```{r w06-height1, echo=FALSE}
 ppl %>% ggplot(aes(Height)) +
   geom_histogram(binwidth = 1)
 ```
 
 ## Rozkład wzrostu w zależności od płci
 
-```{r echo=FALSE}
+```{r w06-height2, echo=FALSE}
 ppl %>% 
   ggplot(aes(Height, colour = Gender)) +
   geom_freqpoly(binwidth = 1)
@@ -73,7 +73,7 @@ ppl %>%
 
 ## Czy mężczyźni są wyżsi niż kobiety?
 
-```{r echo=FALSE}
+```{r w06-height3, echo=FALSE}
 ppl %>% 
   group_by(Gender) %>% 
   summarise(mean_height = mean(Height, na.rm = T)) %>% 
@@ -83,7 +83,7 @@ ppl %>%
 
 ## Czy mężczyźni są wyżsi niż kobiety?
 
-```{r echo=FALSE}
+```{r w06-height4, echo=FALSE}
 ggplot(ppl, aes(Gender, Height)) +
   geom_boxplot()
 ```
@@ -97,7 +97,7 @@ ggplot(ppl, aes(Gender, Height)) +
 
 ## Czy mężczyźni są ciężsi niż kobiety?
 
-```{r echo=FALSE}
+```{r w06-weight1, echo=FALSE}
 ggplot(ppl, aes(Gender, Weight)) +
   geom_boxplot()
 ```
@@ -122,7 +122,7 @@ ggplot(ppl, aes(Gender, Weight)) +
 
 ## Waga wiąże się ze wzrostem? (N=100)
 
-```{r echo=FALSE}
+```{r w06-cor1, echo=FALSE}
 ppl_100 <- ppl %>% 
   slice(sample(1:10000, size = 100, replace = T)) 
 
@@ -136,7 +136,7 @@ ppl_100 %>%
 
 ## Waga wiąże się ze wzrostem? (N=100)
 
-```{r echo=FALSE, warning=FALSE}
+```{r w06-cor2, echo=FALSE, warning=FALSE}
 ppl %>% 
   slice(sample(1:10000, size = 100, replace = T)) %>% 
   ggplot(aes(Height, Weight)) +
@@ -146,14 +146,14 @@ ppl %>%
 
 ## Waga a wzrost (N=10000)
 
-```{r echo=FALSE, warning=FALSE}
+```{r w06-cor3, echo=FALSE, warning=FALSE}
 ppl %>% ggplot(aes(Height, Weight)) +
   geom_point(alpha = 2/10)
 ```
 
 ## Waga a wzrost (N=10000)
 
-```{r echo=FALSE, warning=FALSE}
+```{r w06-cor4, echo=FALSE, warning=FALSE}
 ppl %>% ggplot(aes(Height, Weight)) +
   geom_point(alpha = 1/10) + 
   geom_smooth()
@@ -161,7 +161,7 @@ ppl %>% ggplot(aes(Height, Weight)) +
 
 ## Waga, wzrost a płeć?
 
-```{r echo=FALSE, warning=FALSE}
+```{r w06-cor5, echo=FALSE, warning=FALSE}
 ppl %>% ggplot(aes(Height, Weight, colour = Gender)) +
   geom_point(alpha = 1/10)
 ```
@@ -169,7 +169,7 @@ ppl %>% ggplot(aes(Height, Weight, colour = Gender)) +
 ## Inne przykłady
 
 ---
-```{r echo=FALSE, warning=FALSE}
+```{r w06-cor6, echo=FALSE, warning=FALSE}
 
 r_pearsons <- function(x, y) {
   correlation <- cor(x, y) %>% 
@@ -191,7 +191,7 @@ ppl_rand %>% ggplot(aes(Height, x1)) +
 
 ---
 
-```{r echo=FALSE, warning=FALSE}
+```{r w06-cor7, echo=FALSE, warning=FALSE}
 
 ppl_rand %>% ggplot(aes(Weight, x2)) + 
   geom_point()
@@ -199,7 +199,7 @@ ppl_rand %>% ggplot(aes(Weight, x2)) +
 
 ---
 
-```{r echo=FALSE, warning=FALSE}
+```{r w06-cor8, echo=FALSE, warning=FALSE}
 
 ppl_rand %>% ggplot(aes(Weight, x2)) + 
   geom_point() + 
@@ -208,14 +208,14 @@ ppl_rand %>% ggplot(aes(Weight, x2)) +
 
 ---
 
-```{r echo=FALSE, warning=FALSE}
+```{r w06-cor9, echo=FALSE, warning=FALSE}
 ppl_rand %>% ggplot(aes(Weight, x3)) + 
   geom_point()
 ```
 
 ---
 
-```{r echo=FALSE, warning=FALSE}
+```{r w06-cor10, echo=FALSE, warning=FALSE}
 ppl_rand %>% ggplot(aes(Weight, x3)) + 
   geom_point() + 
   ggtitle(r_pearsons(ppl_rand$Weight, ppl_rand$x3))
@@ -223,14 +223,14 @@ ppl_rand %>% ggplot(aes(Weight, x3)) +
 
 ---
 
-```{r echo=FALSE, warning=FALSE}
+```{r w06-cor11, echo=FALSE, warning=FALSE}
 ppl_rand %>% ggplot(aes(Weight, x4)) + 
   geom_point()
 ```
 
 ---
 
-```{r echo=FALSE, warning=FALSE}
+```{r w06-cor12, echo=FALSE, warning=FALSE}
 ppl_rand %>% ggplot(aes(Weight, x4)) + 
   geom_point() + 
   ggtitle(r_pearsons(ppl_rand$Weight, ppl_rand$x4))
@@ -242,25 +242,25 @@ ppl_rand %>% ggplot(aes(Weight, x4)) +
 
 ---
 
-```{r echo=FALSE, warning=FALSE}
+```{r w06-anscombe1, echo=FALSE, warning=FALSE}
 anscombe %>% ggplot(aes(x1, y1)) + geom_point()
 ```
 
 ---
 
-```{r echo=FALSE, warning=FALSE}
+```{r w06-anscombe2, echo=FALSE, warning=FALSE}
 anscombe %>% ggplot(aes(x2, y2)) + geom_point()
 ```
 
 ---
 
-```{r echo=FALSE, warning=FALSE}
+```{r w06-anscombe3, echo=FALSE, warning=FALSE}
 anscombe %>% ggplot(aes(x3, y3)) + geom_point()
 ```
 
 ---
 
-```{r echo=FALSE, warning=FALSE}
+```{r w06-anscombe4, echo=FALSE, warning=FALSE}
 anscombe %>% ggplot(aes(x4, y4)) + geom_point()
 ```
 
@@ -373,42 +373,50 @@ anscombe %>% ggplot(aes(x4, y4)) + geom_point()
 
 ![Hm...](img/w02_spurious/chart-1.png)
 
-<small>Wykres pochodzi z [http://tylervigen.com/spurious-correlations](http://tylervigen.com/spurious-correlations)</small>
+<small>Wykres pochodzi z [http://tylervigen.com/spurious-correlations](http://tylervigen.com/spurious-correlations),  
+[creative commons license](https://creativecommons.org/licenses/by/4.0/)</small>
 
 ---
 
 ![Hm...](img/w02_spurious/chart-2.png)
 
-<small>Wykres pochodzi z [http://tylervigen.com/spurious-correlations](http://tylervigen.com/spurious-correlations)</small>
+<small>Wykres pochodzi z [http://tylervigen.com/spurious-correlations](http://tylervigen.com/spurious-correlations),  
+[creative commons license](https://creativecommons.org/licenses/by/4.0/)</small>
 
 ---
 
 ![Hm...](img/w02_spurious/chart-3.png)
 
-<small>Wykres pochodzi z [http://tylervigen.com/spurious-correlations](http://tylervigen.com/spurious-correlations)</small>
+<small>Wykres pochodzi z [http://tylervigen.com/spurious-correlations](http://tylervigen.com/spurious-correlations),  
+[creative commons license](https://creativecommons.org/licenses/by/4.0/)</small>
 
 ---
 
 ![Hm...](img/w02_spurious/chart-4.png)
 
-<small>Wykres pochodzi z [http://tylervigen.com/spurious-correlations](http://tylervigen.com/spurious-correlations)</small>
+<small>Wykres pochodzi z [http://tylervigen.com/spurious-correlations](http://tylervigen.com/spurious-correlations),  
+[creative commons license](https://creativecommons.org/licenses/by/4.0/)</small>
+
 ---
 
 ![Hm...](img/w02_spurious/chart-5.png)
 
-<small>Wykres pochodzi z [http://tylervigen.com/spurious-correlations](http://tylervigen.com/spurious-correlations)</small>
+<small>Wykres pochodzi z [http://tylervigen.com/spurious-correlations](http://tylervigen.com/spurious-correlations),  
+[creative commons license](https://creativecommons.org/licenses/by/4.0/)</small>
 
 ---
 
 ![Hm...](img/w02_spurious/chart-6.png)
 
-<small>Wykres pochodzi z [http://tylervigen.com/spurious-correlations](http://tylervigen.com/spurious-correlations)</small>
+<small>Wykres pochodzi z [http://tylervigen.com/spurious-correlations](http://tylervigen.com/spurious-correlations),  
+[creative commons license](https://creativecommons.org/licenses/by/4.0/)</small>
 
 ---
 
 ![Hm...](img/w02_spurious/chart-7.png)
 
-<small>Wykres pochodzi z [http://tylervigen.com/spurious-correlations](http://tylervigen.com/spurious-correlations)</small>
+<small>Wykres pochodzi z [http://tylervigen.com/spurious-correlations](http://tylervigen.com/spurious-correlations),  
+[creative commons license](https://creativecommons.org/licenses/by/4.0/)</small>
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Korelacja vs przyczynowość
+Title: Korelacja vs przyczynowość
 ---
 
 # Słowem przypomnienia
@@ -44,7 +44,7 @@ Jakakolwiek własność lub cecha, która przyjmuje różne wartości u różnyc
 ## Jak porównujemy grupy
 
 - Miary tendencji centralnej: średnia, mediana, moda
-- 
+- Miary zmienności, rozproszenia wyników wokół średniej: odchylenie standardowe, wariancja
 
 
 
@@ -52,11 +52,11 @@ Jakakolwiek własność lub cecha, która przyjmuje różne wartości u różnyc
 
 ## Rozkład wzrostu w próbie
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png)
+![plot of chunk w06-height1](figure/w06-height1-1.png)
 
 ## Rozkład wzrostu w zależności od płci
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png)
+![plot of chunk w06-height2](figure/w06-height2-1.png)
 
 ## Czy mężczyźni są wyżsi niż kobiety?
 
@@ -65,11 +65,11 @@ Jakakolwiek własność lub cecha, która przyjmuje różne wartości u różnyc
 ## `summarise()` ungrouping output (override with `.groups` argument)
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png)
+![plot of chunk w06-height3](figure/w06-height3-1.png)
 
 ## Czy mężczyźni są wyżsi niż kobiety?
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png)
+![plot of chunk w06-height4](figure/w06-height4-1.png)
 
 ## Wykres ramka-wąsy (Tukey)
 
@@ -80,7 +80,7 @@ Jakakolwiek własność lub cecha, która przyjmuje różne wartości u różnyc
 
 ## Czy mężczyźni są ciężsi niż kobiety?
 
-![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png)
+![plot of chunk w06-weight1](figure/w06-weight1-1.png)
 
 ## Korelacja
 
@@ -102,7 +102,7 @@ Jakakolwiek własność lub cecha, która przyjmuje różne wartości u różnyc
 
 ## Waga wiąże się ze wzrostem? (N=100)
 
-![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png)
+![plot of chunk w06-cor1](figure/w06-cor1-1.png)
 
 ## Waga wiąże się ze wzrostem? (N=100)
 
@@ -111,11 +111,11 @@ Jakakolwiek własność lub cecha, która przyjmuje różne wartości u różnyc
 ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
 ```
 
-![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png)
+![plot of chunk w06-cor2](figure/w06-cor2-1.png)
 
 ## Waga a wzrost (N=10000)
 
-![plot of chunk unnamed-chunk-9](figure/unnamed-chunk-9-1.png)
+![plot of chunk w06-cor3](figure/w06-cor3-1.png)
 
 ## Waga a wzrost (N=10000)
 
@@ -124,39 +124,40 @@ Jakakolwiek własność lub cecha, która przyjmuje różne wartości u różnyc
 ## `geom_smooth()` using method = 'gam' and formula 'y ~ s(x, bs = "cs")'
 ```
 
-![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10-1.png)
+![plot of chunk w06-cor4](figure/w06-cor4-1.png)
 
 ## Waga, wzrost a płeć?
 
-![plot of chunk unnamed-chunk-11](figure/unnamed-chunk-11-1.png)
+![plot of chunk w06-cor5](figure/w06-cor5-1.png)
 
 ## Inne przykłady
 
 ---
-![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12-1.png)
-
----
-![plot of chunk unnamed-chunk-13](figure/unnamed-chunk-13-1.png)
+![plot of chunk w06-cor6](figure/w06-cor6-1.png)
 
 ---
 
-![plot of chunk unnamed-chunk-14](figure/unnamed-chunk-14-1.png)
+![plot of chunk w06-cor7](figure/w06-cor7-1.png)
 
 ---
 
-![plot of chunk unnamed-chunk-15](figure/unnamed-chunk-15-1.png)
+![plot of chunk w06-cor8](figure/w06-cor8-1.png)
 
 ---
 
-![plot of chunk unnamed-chunk-16](figure/unnamed-chunk-16-1.png)
+![plot of chunk w06-cor9](figure/w06-cor9-1.png)
 
 ---
 
-![plot of chunk unnamed-chunk-17](figure/unnamed-chunk-17-1.png)
+![plot of chunk w06-cor10](figure/w06-cor10-1.png)
 
 ---
 
-![plot of chunk unnamed-chunk-18](figure/unnamed-chunk-18-1.png)
+![plot of chunk w06-cor11](figure/w06-cor11-1.png)
+
+---
+
+![plot of chunk w06-cor12](figure/w06-cor12-1.png)
 
 # Czy z tą korelacją to zawsze taka prosta sprawa?
 
@@ -164,19 +165,19 @@ Jakakolwiek własność lub cecha, która przyjmuje różne wartości u różnyc
 
 ---
 
-![plot of chunk unnamed-chunk-19](figure/unnamed-chunk-19-1.png)
+![plot of chunk w06-anscombe1](figure/w06-anscombe1-1.png)
 
 ---
 
-![plot of chunk unnamed-chunk-20](figure/unnamed-chunk-20-1.png)
+![plot of chunk w06-anscombe2](figure/w06-anscombe2-1.png)
 
 ---
 
-![plot of chunk unnamed-chunk-21](figure/unnamed-chunk-21-1.png)
+![plot of chunk w06-anscombe3](figure/w06-anscombe3-1.png)
 
 ---
 
-![plot of chunk unnamed-chunk-22](figure/unnamed-chunk-22-1.png)
+![plot of chunk w06-anscombe4](figure/w06-anscombe4-1.png)
 
 ## r = ?
 
@@ -287,29 +288,50 @@ Jakakolwiek własność lub cecha, która przyjmuje różne wartości u różnyc
 
 ![Hm...](img/w02_spurious/chart-1.png)
 
+<small>Wykres pochodzi z [http://tylervigen.com/spurious-correlations](http://tylervigen.com/spurious-correlations),  
+[creative commons license](https://creativecommons.org/licenses/by/4.0/)</small>
+
 ---
 
 ![Hm...](img/w02_spurious/chart-2.png)
+
+<small>Wykres pochodzi z [http://tylervigen.com/spurious-correlations](http://tylervigen.com/spurious-correlations),  
+[creative commons license](https://creativecommons.org/licenses/by/4.0/)</small>
 
 ---
 
 ![Hm...](img/w02_spurious/chart-3.png)
 
+<small>Wykres pochodzi z [http://tylervigen.com/spurious-correlations](http://tylervigen.com/spurious-correlations),  
+[creative commons license](https://creativecommons.org/licenses/by/4.0/)</small>
+
 ---
 
 ![Hm...](img/w02_spurious/chart-4.png)
+
+<small>Wykres pochodzi z [http://tylervigen.com/spurious-correlations](http://tylervigen.com/spurious-correlations),  
+[creative commons license](https://creativecommons.org/licenses/by/4.0/)</small>
 
 ---
 
 ![Hm...](img/w02_spurious/chart-5.png)
 
+<small>Wykres pochodzi z [http://tylervigen.com/spurious-correlations](http://tylervigen.com/spurious-correlations),  
+[creative commons license](https://creativecommons.org/licenses/by/4.0/)</small>
+
 ---
 
 ![Hm...](img/w02_spurious/chart-6.png)
 
+<small>Wykres pochodzi z [http://tylervigen.com/spurious-correlations](http://tylervigen.com/spurious-correlations),  
+[creative commons license](https://creativecommons.org/licenses/by/4.0/)</small>
+
 ---
 
 ![Hm...](img/w02_spurious/chart-7.png)
+
+<small>Wykres pochodzi z [http://tylervigen.com/spurious-correlations](http://tylervigen.com/spurious-correlations),  
+[creative commons license](https://creativecommons.org/licenses/by/4.0/)</small>
 
 ---
 

@@ -106,7 +106,7 @@ Wyobraźcie sobie, że mamy populację 100 reniferów Świętego Mikołaja, w kt
 
 ::: incremental
 
-- Na 99884400 sposobów99884400
+- Na 99884400 sposobów
 
 :::
 
@@ -201,5 +201,3 @@ W naszym przykładzie w rzeczywistości nie ma różnic między miziołkami i bu
 ## Praktyczne pytania, które odbiorca badania powinien sobie zadać
 
 - Jaki jest poziom istotności statystycznej uzyskanych wyników? Czy dla Ciebie, jako odbiorcy badania jest satysfakcjonujący?
-
- 

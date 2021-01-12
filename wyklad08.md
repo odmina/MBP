@@ -121,7 +121,7 @@ hist(five_miziolki_means)
 
 ::: incremental
 
-- Na `r choose(k = 7, n = 50)` sposobów`r choose(k = 7, n = 50)`
+- Na `r choose(k = 7, n = 50)` sposobów
 
 :::
 

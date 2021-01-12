@@ -202,18 +202,18 @@ W naszym przykładzie w rzeczywistości nie ma różnic między miziołkami i bu
 
 ## Wartość *p*
 
-- Wartość *p* (*p value*), z którą stykacie się analizując wyniki badań oznacza prawdopodbieństwo z jakim obserwowany w badaniu wynik mógł pojawić się w sytuacji, w której dana zależność w populacji nie występuje.
+- Wartość *p* (*p value*), z którą stykacie się analizując wyniki badań, oznacza prawdopodbieństwo z jakim obserwowany w badaniu wynik mógł pojawić się w sytuacji, w której dana zależność w populacji nie występuje.
 
 # Podsumowanie
 
 ## Ważny wniosek
 
-- Nawet jeżeli w interesującej nas populacji nie ma żadnej różnicy między dwoma grupami, możemy zaobserwować taką różnicę nawet w doskonale zaprojektowanym badaniu.
-- Dzieje się tak ze dlatego, że nie badamy całej populacji, a jedynie jej niewielką część (próbę) i może wystąpić sytuacja, w której nawet gdy dana różnica w populacji nie występuje, do naszej próby trafią badani, którzy się różnią... bo tak wyszło.
+- Jeżeli w interesującej nas populacji nie ma żadnej różnicy między dwoma grupami, możemy zaobserwować taką różnicę nawet w doskonale zaprojektowanym badaniu.
+- Dzieje się tak dlatego, że nie badamy całej populacji, a jedynie jej niewielką część (próbę) i może wystąpić sytuacja, w której nawet gdy dana różnica w populacji nie występuje, do naszej próby trafią badani, którzy się różnią... bo tak wyszło.
 
 ------
 
-- To jak duże jest prawdopodobieństwo, że obserwowana przez nas różnica między grupami mogła pojawić się w sytuacji, w której w populacji nie ma różnic  określa *wartość p*.
+- To, jak duże jest prawdopodobieństwo, że obserwowana przez nas różnica między grupami mogła pojawić się w sytuacji, w której w populacji nie ma różnic, określa *wartość p*.
 
 ## Praktyczne pytania, które odbiorca badania powinien sobie zadać
 

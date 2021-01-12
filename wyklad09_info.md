@@ -15,6 +15,10 @@ Załącznik A. Analiza danych i ich interpretacja. Podrozdziały:
 - Przykład badania
 - Testowanie istotności hipotez zerowych
 
+Rozdział 6. Plany grup niezależnych. Podrozdziały:
+
+- Analiza eksperymentów: Wprowadzenie, Przedziały ufności, Testowanie hipotez zerowych, Ograniczenia procedury testownia hipotezy zerowej
+
 Możecie skorzystać również z:  
 **Brzeziński, J. M., & Zakrzewska, M. (2008). Metodologia. Podstawy metodologiczne i statystyczne prowadzenia badań naukowych w psychologii. In J. Strelau & D. Doliński (Eds.), Psychologia. Podręcznik Akademicki, tom 1 (pp. 175–302). Sopot: Gdańskie Wydawnictwo Psychologiczne.**
 Podrozdziały:

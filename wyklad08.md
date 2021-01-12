@@ -71,13 +71,13 @@ buziolki <- data.frame(grupa = rep("buziołki", 50), extra = miziolki$extra)
 
 ## Rozkład wyników - miziołki
 
-```{r, echo = FALSE}
+```{r w08-miziolki, echo = FALSE}
 hist(miziolki$extra)
 ```
 
 ## Rozkład wyników - buziolki
 
-```{r, echo = FALSE}
+```{r w08-buziolki, echo = FALSE}
 hist(buziolki$extra)
 ```
 
@@ -97,7 +97,7 @@ hist(buziolki$extra)
 
 ## Jaka będzie średnia dla 3 z 50 miziołków / buziołków?
 
-```{r, echo = FALSE}
+```{r w08-hist3, echo = FALSE}
 three_miziolki_means <- combn(miziolki$extra, 3, mean)
 hist(three_miziolki_means)
 ```
@@ -112,7 +112,7 @@ hist(three_miziolki_means)
 
 ## Jaka będzie średnia dla 5 z 50 miziołków / buziołków?
 
-```{r, echo = FALSE}
+```{r w08-hist5, echo = FALSE}
 five_miziolki_means <- combn(miziolki$extra, 5, mean)
 hist(five_miziolki_means)
 ```
@@ -131,7 +131,7 @@ hist(five_miziolki_means)
 
 ## Skupmy się na badaniu, w którym losujemy 3 miziołki i 3 buziołki
 
-```{r, echo = FALSE}
+```{r w08-hist3-2, echo = FALSE}
 hist(three_miziolki_means)
 ```
 
@@ -210,10 +210,11 @@ W naszym przykładzie w rzeczywistości nie ma różnic między miziołkami i bu
 
 - Nawet jeżeli w interesującej nas populacji nie ma żadnej różnicy między dwoma grupami, możemy zaobserwować taką różnicę nawet w doskonale zaprojektowanym badaniu.
 - Dzieje się tak ze dlatego, że nie badamy całej populacji, a jedynie jej niewielką część (próbę) i może wystąpić sytuacja, w której nawet gdy dana różnica w populacji nie występuje, do naszej próby trafią badani, którzy się różnią... bo tak wyszło.
+
+------
+
 - To jak duże jest prawdopodobieństwo, że obserwowana przez nas różnica między grupami mogła pojawić się w sytuacji, w której w populacji nie ma różnic  określa *wartość p*.
 
 ## Praktyczne pytania, które odbiorca badania powinien sobie zadać
 
 - Jaki jest poziom istotności statystycznej uzyskanych wyników? Czy dla Ciebie, jako odbiorcy badania jest satysfakcjonujący?
-
- 

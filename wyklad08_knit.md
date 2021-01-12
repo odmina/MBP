@@ -66,11 +66,11 @@ Wyobraźcie sobie, że mamy populację 100 reniferów Świętego Mikołaja, w kt
 
 ## Rozkład wyników - miziołki
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png)
+![plot of chunk w08-miziolki](figure/w08-miziolki-1.png)
 
 ## Rozkład wyników - buziolki
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png)
+![plot of chunk w08-buziolki](figure/w08-buziolki-1.png)
 
 ## Podstawowe statystyki w obydwu grupach
 
@@ -88,7 +88,7 @@ Wyobraźcie sobie, że mamy populację 100 reniferów Świętego Mikołaja, w kt
 
 ## Jaka będzie średnia dla 3 z 50 miziołków / buziołków?
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png)
+![plot of chunk w08-hist3](figure/w08-hist3-1.png)
 
 ## Na ile sposobów możemy wybrać 5 z 50 miziołków / buziołków?
 
@@ -100,7 +100,7 @@ Wyobraźcie sobie, że mamy populację 100 reniferów Świętego Mikołaja, w kt
 
 ## Jaka będzie średnia dla 5 z 50 miziołków / buziołków?
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png)
+![plot of chunk w08-hist5](figure/w08-hist5-1.png)
 
 ## Na ile sposobów możemy wybrać 7 z 50 miziołków / buziołków?
 
@@ -116,7 +116,7 @@ Wyobraźcie sobie, że mamy populację 100 reniferów Świętego Mikołaja, w kt
 
 ## Skupmy się na badaniu, w którym losujemy 3 miziołki i 3 buziołki
 
-![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png)
+![plot of chunk w08-hist3-2](figure/w08-hist3-2-1.png)
 
 ## Jakie jest prawdopodobieństwo, że w naszym badaniu, gdzie n = 3 wystąpi średnia mniejsza od 10 albo większa od 20?
 
@@ -157,7 +157,7 @@ Wyobraźcie sobie, że mamy populację 100 reniferów Świętego Mikołaja, w kt
 
 ## Ok, a co jeżeli zbadaliśmy więcej reniferów? Np. 5?
 
-W naszym przykładzie w rzeczywistości nie ma różnic między miziołkami i buziołkami. Czy prawdopodobieństwo, że przez przypadek zaobserwujemy różnicę na poziomie 3 punktów będzie większe czy mniejsze, kiedy zbadamy więcej reniferów (5 zamiast 3)?
+W naszym przykładzie w rzeczywistości nie ma różnic między miziołkami i buziołkami. Czy prawdopodobieństwo, że zaobserwujemy różnicę na poziomie 3 punktów będzie większe czy mniejsze, kiedy zbadamy więcej reniferów (5 zamiast 3)?
 
 --------------------
 
@@ -176,26 +176,30 @@ W naszym przykładzie w rzeczywistości nie ma różnic między miziołkami i bu
 ## Wnioski z tej prostej symulacji
 
 - Nawet jeżeli dwie grupy się nie różnią, możemy w badaniu uzyskać jakąś różnicę między wylosowanymi z nich próbami.
-- Jesteśmy w stanie oszacować prawdopodobieństwo wystąpienia różnicy o określonej wielkości (choć w praktyce jest to nieco bardziej skomplikowane niż w podanym przykładzie).
+- Jesteśmy w stanie oszacować prawdopodobieństwo wystąpienia różnicy o określonej wielkości, gdy dwie grupy się nie różnią (choć w praktyce jest to nieco bardziej skomplikowane niż w podanym przykładzie).
 
 ---
 
-- Im mniejsza różnica (słabsza zależność), tym większe prawdopodobieństwo, że ją uzyskamy w badaniu przez przypadek, nawet jeżeli w populacji nie ma różnic między grupami.
-- Im więcej osób w naszej próbie, tym mniejsze prawdopodobieństwo, że przez przypadek zaobserwowaliśmy zależność, której nie ma (zalecam jednak ostrożność).
+- Im mniejsza różnica (słabsza zależność), tym większe prawdopodobieństwo, że ją uzyskamy w badaniu w sytuacji, w której w populacji nie ma różnic między grupami.
+- Im więcej osób w naszej próbie, tym mniejsze prawdopodobieństwo, że zaobserwujemy różnicę określonej wielkości w sytuacji, w której w populacji nie ma różnic między grupami.
 
 ## Wartość *p*
 
-- Wartość *p* (*p value*), z którą stykacie się analizując wyniki badań oznacza prawdopodbieństwo z jakim obserwowany w badaniu wynik mógł pojawić się przez przypadek w sytuacji, w której zaoserwowana zależność w populacji nie występuje.
+- Wartość *p* (*p value*), z którą stykacie się analizując wyniki badań oznacza prawdopodbieństwo z jakim obserwowany w badaniu wynik mógł pojawić się w sytuacji, w której dana zależność w populacji nie występuje.
 
 # Podsumowanie
 
 ## Ważny wniosek
 
-- Nawet jeżeli w interesującej nas populacji nie ma żadnej zależności między dwoma zmiennymi, możemy zaobserwować taką zależność nawet w doskonale zaprojektowanym badaniu.
-- Dzieje się tak ze względu na to, że nie badamy całej populacji, a jedynie jej niewielką część (próbę) i możemy wystąpić sytuacja, w której zależność pojawi się przez przypadek. 
-- To jak duże jest prawdopodobieństwo, że obserwowana przez nas wartość pojawiła się przez przypadek określa wartość p.
+- Nawet jeżeli w interesującej nas populacji nie ma żadnej różnicy między dwoma grupami, możemy zaobserwować taką różnicę nawet w doskonale zaprojektowanym badaniu.
+- Dzieje się tak ze dlatego, że nie badamy całej populacji, a jedynie jej niewielką część (próbę) i może wystąpić sytuacja, w której nawet gdy dana różnica w populacji nie występuje, do naszej próby trafią badani, którzy się różnią... bo tak wyszło.
+
+------
+
+- To jak duże jest prawdopodobieństwo, że obserwowana przez nas różnica między grupami mogła pojawić się w sytuacji, w której w populacji nie ma różnic  określa *wartość p*.
 
 ## Praktyczne pytania, które odbiorca badania powinien sobie zadać
 
 - Jaki jest poziom istotności statystycznej uzyskanych wyników? Czy dla Ciebie, jako odbiorcy badania jest satysfakcjonujący?
+
  

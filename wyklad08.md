@@ -174,7 +174,7 @@ hist(three_miziolki_means)
 
 ## Ok, a co jeżeli zbadaliśmy więcej reniferów? Np. 5?
 
-W naszym przykładzie w rzeczywistości nie ma różnic między miziołkami i buziołkami. Czy prawdopodobieństwo, że przez przypadek zaobserwujemy różnicę na poziomie 3 punktów będzie większe czy mniejsze, kiedy zbadamy więcej reniferów (5 zamiast 3)?
+W naszym przykładzie w rzeczywistości nie ma różnic między miziołkami i buziołkami. Czy prawdopodobieństwo, że zaobserwujemy różnicę na poziomie 3 punktów będzie większe czy mniejsze, kiedy zbadamy więcej reniferów (5 zamiast 3)?
 
 --------------------
 
@@ -193,26 +193,27 @@ W naszym przykładzie w rzeczywistości nie ma różnic między miziołkami i bu
 ## Wnioski z tej prostej symulacji
 
 - Nawet jeżeli dwie grupy się nie różnią, możemy w badaniu uzyskać jakąś różnicę między wylosowanymi z nich próbami.
-- Jesteśmy w stanie oszacować prawdopodobieństwo wystąpienia różnicy o określonej wielkości (choć w praktyce jest to nieco bardziej skomplikowane niż w podanym przykładzie).
+- Jesteśmy w stanie oszacować prawdopodobieństwo wystąpienia różnicy o określonej wielkości, gdy dwie grupy się nie różnią (choć w praktyce jest to nieco bardziej skomplikowane niż w podanym przykładzie).
 
 ---
 
-- Im mniejsza różnica (słabsza zależność), tym większe prawdopodobieństwo, że ją uzyskamy w badaniu przez przypadek, nawet jeżeli w populacji nie ma różnic między grupami.
-- Im więcej osób w naszej próbie, tym mniejsze prawdopodobieństwo, że przez przypadek zaobserwowaliśmy zależność, której nie ma (zalecam jednak ostrożność).
+- Im mniejsza różnica (słabsza zależność), tym większe prawdopodobieństwo, że ją uzyskamy w badaniu w sytuacji, w której w populacji nie ma różnic między grupami.
+- Im więcej osób w naszej próbie, tym mniejsze prawdopodobieństwo, że zaobserwujemy różnicę określonej wielkości w sytuacji, w której w populacji nie ma różnic między grupami.
 
 ## Wartość *p*
 
-- Wartość *p* (*p value*), z którą stykacie się analizując wyniki badań oznacza prawdopodbieństwo z jakim obserwowany w badaniu wynik mógł pojawić się przez przypadek w sytuacji, w której zaoserwowana zależność w populacji nie występuje.
+- Wartość *p* (*p value*), z którą stykacie się analizując wyniki badań oznacza prawdopodbieństwo z jakim obserwowany w badaniu wynik mógł pojawić się w sytuacji, w której dana zależność w populacji nie występuje.
 
 # Podsumowanie
 
 ## Ważny wniosek
 
-- Nawet jeżeli w interesującej nas populacji nie ma żadnej zależności między dwoma zmiennymi, możemy zaobserwować taką zależność nawet w doskonale zaprojektowanym badaniu.
-- Dzieje się tak ze względu na to, że nie badamy całej populacji, a jedynie jej niewielką część (próbę) i możemy wystąpić sytuacja, w której zależność pojawi się przez przypadek. 
-- To jak duże jest prawdopodobieństwo, że obserwowana przez nas wartość pojawiła się przez przypadek określa wartość p.
+- Nawet jeżeli w interesującej nas populacji nie ma żadnej różnicy między dwoma grupami, możemy zaobserwować taką różnicę nawet w doskonale zaprojektowanym badaniu.
+- Dzieje się tak ze dlatego, że nie badamy całej populacji, a jedynie jej niewielką część (próbę) i może wystąpić sytuacja, w której nawet gdy dana różnica w populacji nie występuje, do naszej próby trafią badani, którzy się różnią... bo tak wyszło.
+- To jak duże jest prawdopodobieństwo, że obserwowana przez nas różnica między grupami mogła pojawić się w sytuacji, w której w populacji nie ma różnic  określa *wartość p*.
 
 ## Praktyczne pytania, które odbiorca badania powinien sobie zadać
 
 - Jaki jest poziom istotności statystycznej uzyskanych wyników? Czy dla Ciebie, jako odbiorcy badania jest satysfakcjonujący?
+
  

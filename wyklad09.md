@@ -180,11 +180,6 @@ Oznacza to, że gdyby interesująca nas *zależność* nie istniała w populacji
 ## Jak moc testu ma się do błędu II rodzaju?
 
 - Im większa moc testu, tym *większe* prawdopodobieństwo *odrzucenia* $H_0$, gdy $H_1$ jest *prawdziwa*.  
-- Tym samym, im większa moc testu, tym *większe* prawdopodobieństwo *odrzucenia* $H_0$, gdy $H_0$ jest *fałszywa*. 
-
----------
-
-- Tym samym, im większa moc testu, tym *mniejsze* prawdopodobieństwo *przyjęcia* $H_0$, gdy jest ona *fałszywa*.  
 - Tym samym, im większa moc testu, tym *mniejsze* prawdopodobieństwo popełnienia błędu II rodzaju.
 
 ## Notacja matematyczna

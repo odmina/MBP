@@ -28,7 +28,7 @@ ul. Tuwima 15
 
 ## Jeszcze inny podręcznik
 
-**Do znalezienia w zasobach GUMed.**
+**Do znalezienia w zasobach GUMed.**  
 ![](img/w01joy.png)
 
 
@@ -43,7 +43,7 @@ ul. Tuwima 15
 
 ## Źródła on-line
 
-<img src="img/w01_leek.png">
+![](img/w01_leek.png)
 
 
 # Format zajęć i zaliczenie

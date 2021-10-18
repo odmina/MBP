@@ -1,4 +1,3 @@
-
 ---
 title: Metodologia Badań Psychologicznych
 ---
@@ -29,19 +28,23 @@ ul. Tuwima 15
 
 ## Jeszcze inny podręcznik
 
+**Do znalezienia w zasobach GUMed.**
 ![](img/w01joy.png)
+
 
 ## Jeszcze inny podręcznik
 
+[link](https://opentextbc.ca/introductiontopsychology/)  
 ![](https://opentextbc.ca/introductiontopsychology/wp-content/uploads/sites/9/2020/01/OTB012-02-INTRO-PSYC-1stCDN-2018-COVER-STORE3-350x453.jpg)
 
 ## APA Manual
 
-![](img/z01apa.png)
+![](img/z01apa.jpeg)
 
 ## Źródła on-line
 
 <img src="img/w01_leek.png">
+
 
 # Format zajęć i zaliczenie
 
@@ -51,12 +54,11 @@ ul. Tuwima 15
 - ćwiczeniach
 - laboratoriach
 
-## Cztery szerokie zagadnienia na wykładach
+## Trzy szerokie zagadnienia na wykładach
 
 - psychologia jako nauka
 - naukowy ekosystem
 - podstawowy warsztat metodologiczny
-- podstawy etyki w badaniach psychologicznych 
 
 ## Zaliczenie
 
@@ -70,7 +72,6 @@ ul. Tuwima 15
 - Powinniście umieć odróżnić teorie naukowe od pseudonaukowych, wiedzę o rzetelnych podstawach od informacji i praktyk, które naukowej podstawy nie posiadają
 - Posiadać podstawowy warsztat, który pomoże Wam realizować własne badania
 
-  
 
 
 

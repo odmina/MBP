@@ -14,6 +14,10 @@ reveal.js/
 #nie sledź logów
 *.log
 
+#nie śledź kolokwiów i zadań
+kolokwia/
+zadania/
+
 #nie śledź folderu materiały do druku
 materialy_do_druku/
 

@@ -1,8 +1,8 @@
 ---
 author: Małgorzata Basińska
 theme: night
-csl: apa.csl
-css: "styles.css"
-bibliography: references.bib
+csl: _apa.csl
+css: _styles.css
+bibliography: _references.bib
 slide-level: 2
 ---

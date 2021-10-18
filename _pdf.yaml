@@ -1,5 +1,5 @@
 ---
-bibliography: references.bib
+bibliography: _references.bib
 linkcolor: blue
 geometry:
 - top=35mm

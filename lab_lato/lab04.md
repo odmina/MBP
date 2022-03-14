@@ -1,4 +1,4 @@
-# Zbieranie demografii {#lab04}
+# Zbieranie demografii i sztuka zadawania pytań{#lab04}
 
 :::{.box}
 

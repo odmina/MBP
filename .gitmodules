@@ -1,3 +1,6 @@
 [submodule "MBP_labs"]
 	path = MBP_labs
 	url = https://github.com/odmina/MBP_labs
+[submodule "lab_lato/MBP_labs"]
+	path = lab_lato/MBP_labs
+	url = https://github.com/odmina/MBP_labs.git

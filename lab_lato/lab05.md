@@ -1,6 +1,6 @@
 # Narzędzia pomiarowe {#lab05}
 
-## Miejsca, w których możecie znaleźć narzędzia pomiarowe {#lab05-miejscax  }
+## Miejsca, w których możecie znaleźć narzędzia pomiarowe {#lab05-miejsca}
 
 Poniżej podaję namiary na miejsca, w których możecie znaleźć narzędzia pomiarowe, które możecie wykorzystać w swoich projektach.
 

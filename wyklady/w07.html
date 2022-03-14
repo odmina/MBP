@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Małgorzata Basińska">
+  <title>Próba i populacja</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/night.css" id="theme">
+  <link rel="stylesheet" href="_styles.css"/>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Próba i populacja</h1>
+  <p class="author">Małgorzata Basińska</p>
+</section>
+
+<section>
+<section id="słowem-przypomnienia" class="title-slide slide level1">
+<h1>Słowem przypomnienia</h1>
+
+</section>
+<section id="rodzaje-związków-między-zmiennymi" class="slide level2">
+<h2>Rodzaje związków między zmiennymi</h2>
+<ul>
+<li>Różnice między grupami:
+<ul>
+<li>zmienna niezależna: zmienna grupująca</li>
+<li>zmienna zależna: zmienna, której zmienność może być wyjaśniania przynależnością do grup różniących się poziomiem zmiennej niezależnej</li>
+</ul></li>
+<li>Korelacja:
+<ul>
+<li>określamy współzmienność zmiennej niezależnej i zależnej, związek liniowy między nimi</li>
+</ul></li>
+</ul>
+</section>
+<section id="przykłady" class="slide level2">
+<h2>Przykłady</h2>
+<div>
+<ul>
+<li class="fragment">długość życia a przynależność do grup o niskim i wysokim statusie socjoekonomicznym (w wybranym okresie, np. w dzieciństwie)</li>
+<li class="fragment">spodziewana długość życia a dochody (na podstawie analiz demograficznych)</li>
+<li class="fragment">płeć a zdolności matematyczne (uwaga: mamy poważne powody, by twierdzić, że nie ma różnicy między dziewczynkami a chłopcami)</li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
+
+<div>
+<ul>
+<li class="fragment">jedzenie cukierków w dzieciństwie i ryzyko bycia aresztowanym za brutalne przestępstwo w dorosłości</li>
+<li class="fragment">prymowanie przy pomocy zdjęcia twarzy osoby białej/czarnoskórej a szybkość identyfikacji bodźców związanych z przestępstwami</li>
+</ul>
+</div>
+</section>
+<section id="współczynnik-korelacji" class="slide level2">
+<h2>Współczynnik korelacji</h2>
+<ul>
+<li>Technicznie kilka różnych, w praktyce podobna interpretacja</li>
+<li>Wartości od -1 do 1, im wyższa wartość bezwzględna, tym silniejszy związek</li>
+<li>Wsp. korelacji = 1 lub -1 - idealna zależność liniowa</li>
+<li>Im silniejszy związek, tym dwie zmienne są bliżej zależności <strong>liniowej</strong></li>
+</ul>
+</section>
+<section id="korelacje-dodatnie-i-ujemne---symulacja" class="slide level2">
+<h2>Korelacje dodatnie i ujemne - symulacja</h2>
+<p><a href="https://rpsychologist.com/correlation/">https://rpsychologist.com/correlation/</a></p>
+</section>
+<section id="możliwe-wyjaśnienia-obserwowanego-związku-a-z-b" class="slide level2">
+<h2>Możliwe wyjaśnienia obserwowanego związku A z B</h2>
+<ul>
+<li>A powoduje B lub B powoduje A</li>
+<li>A lub B powoduje całą-&gt;kaskadę-&gt;różnych-&gt;zmian, na końcu której jest druga badana zmienna</li>
+<li>Trzeci czynnik (grupa czynników) powoduje, że pojawia się związek A i B</li>
+<li>Dodatnie i ujemne sprzężenia zwrotne (zależności cykliczne)</li>
+<li>Związek może być PRZYPADKOWY</li>
+</ul>
+</section>
+<section id="czekolada-i-nagroda-nobla" class="slide level2">
+<h2>Czekolada i nagroda Nobla</h2>
+<ul>
+<li>Wyniki badania opublikowanego w NEJM <a href="https://www.nejm.org/doi/full/10.1056/NEJMon1211064">link</a> wskazują, że między konsumpcją czekolady (kg/rok/mieszkaniec) a liczbą nagród Nobla jakie zdobyli obywatele danego państwa istnieje silna, dodatnia, istotna statystycznie korelacja (r = 0,791; p &lt; 0,0001)</li>
+</ul>
+</section>
+<section id="korelacja-to-to-co-widzimy-przyczynowość-interpretacja" class="slide level2">
+<h2>Korelacja to to co widzimy :) przyczynowość = interpretacja</h2>
+<ul>
+<li>Należy pamiętać, że kiedy interpretujemy jakąś obaserwację przyczynowo zakładamy, że manipulacja zmienną niezależną spowoduje określone zmiany zmiennej zależnej</li>
+</ul>
+</section>
+<section id="kiedy-możemy-mówić-o-związku-przyczynowym" class="slide level2">
+<h2>Kiedy możemy mówić o związku przyczynowym?</h2>
+<ul>
+<li>Kiedy zrobimy (dobry) eksperyment</li>
+</ul>
+</section>
+<section id="z-zachowaniem-dużej-ostrożności-również-gdy" class="slide level2">
+<h2>Z zachowaniem <strong><em>DUŻEJ</em></strong> ostrożności również, gdy:</h2>
+<ul>
+<li>zaobserwujemy związek między zmiennymi (na marginesie: istnieją matematyczne narzędzia, które pozwalają na uprawdopodobnienie założenia o przyczynowości)</li>
+<li>ustalimy następstwo czasowe (przyczyna musi poprzedzać skutek)</li>
+<li>będziemy skutecznie kontrolować zmienne zakłócające (uwaga: nigdy nie możemy być pewni, że kontrolujemy wszystkie!)</li>
+<li>wykluczymy alternatywne wyjaśnienia</li>
+</ul>
+</section>
+<section id="paradoks-simpsona-na-przykładzie-leczenia-kamieni-nerkowych" class="slide level2">
+<h2>Paradoks Simpsona na przykładzie leczenia kamieni nerkowych</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;">Leczenie A</th>
+<th style="text-align: center;">Leczenie B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ogółem</td>
+<td style="text-align: center;">78% (273/350)</td>
+<td style="text-align: center;"><strong>83% (289/350)</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="paradoks-simpsona-na-przykładzie-leczenia-kamieni-nerkowych-1" class="slide level2">
+<h2>Paradoks Simpsona na przykładzie leczenia kamieni nerkowych</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;">Leczenie A</th>
+<th style="text-align: center;">Leczenie B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Małe kamienie</td>
+<td style="text-align: center;"><strong>93% (81/87)</strong></td>
+<td style="text-align: center;">87% (234/270)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Duże kamienie</td>
+<td style="text-align: center;"><strong>73% (192/263)</strong></td>
+<td style="text-align: center;">69% (55/80)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ogółem</td>
+<td style="text-align: center;">78% (273/350)</td>
+<td style="text-align: center;"><strong>83% (289/350)</strong></td>
+</tr>
+</tbody>
+</table>
+<p><small>Charig, C. R., Webb, D. R., Payne, S. R., &amp; Wickham, J. E. (1986). Comparison of treatment of renal calculi by open surgery, percutaneous nephrolithotomy, and extracorporeal shockwave lithotripsy. BMJ, 292(6524), 879–882. https://doi.org/10.1136/bmj.292.6524.879</small></p>
+</section></section>
+<section>
+<section id="terminologia-i-uwagi-wstępne" class="title-slide slide level1">
+<h1>Terminologia i uwagi wstępne</h1>
+
+</section>
+<section id="gdy-w-naszym-badaniu-eksperymencie-mamy-więcej-niż-jeden-warunek" class="slide level2">
+<h2>Gdy w naszym badaniu (eksperymencie) mamy więcej niż jeden warunek</h2>
+<ul>
+<li>Dobór do warunków eksperymentalnych musi być losowy - randomizacja</li>
+<li>Wykluczamy w ten sposób, że osoby w jednym warunku różnią się w jakiś szczególny sposób od osób w innym warunku</li>
+<li>Jest to sposób kontrolowania zmiennych związanych z charakterystyką osób badanych</li>
+<li>RANDOMIZACJA TO NIE TO SAMO, CO DOBÓR PRÓBY!!!!</li>
+</ul>
+</section>
+<section id="populacja-i-próba" class="slide level2">
+<h2>Populacja i próba</h2>
+<ul>
+<li><em>Populacja</em> - ogół osób, do których odnosi się dana teoria psychologiczna (np. populacja wszystkich ludzi, populacja kobiet, populacja niemowląt)</li>
+<li>Najczęściej nie możemy zbadać całej populacji ze względów praktycznych</li>
+<li>Badamy tylko określoną cześć populacji - <em>próbę</em></li>
+<li>Jest wiele różnych metod <em>doboru próby</em></li>
+</ul>
+</section></section>
+<section>
+<section id="metody-doboru-próby" class="title-slide slide level1">
+<h1>Metody doboru próby</h1>
+
+</section>
+<section id="metody-probabilistyczne" class="slide level2">
+<h2>Metody probabilistyczne</h2>
+<ul>
+<li>Zakłada, że dysponujemy jakimś <em>operatem losowania</em> dla badanej populacji i z niego <strong>losowo</strong> wyłaniamy osoby badane
+<ul>
+<li>Dobór prosty losowy (<em>simple random sampling</em>)</li>
+<li>Dobór warstwowy (<em>stratified sampling</em>)</li>
+<li>Dobór systematyczny (<em>systematic sampling</em>)</li>
+</ul></li>
+</ul>
+</section>
+<section id="metody-nieprobabilistyczne" class="slide level2">
+<h2>Metody nieprobabilistyczne</h2>
+<ul>
+<li>Dobór przypadkowy (<em>convenience sampling</em>)</li>
+<li>Dobór kwotowy (<em>quota sampling</em>)</li>
+<li>Kula śniegowa (<em>snowball sampling</em>)</li>
+</ul>
+</section>
+<section id="dobór-prosty-losowy" class="slide level2">
+<h2>Dobór prosty, losowy</h2>
+<ul>
+<li>Każda osoba z populacji ma równą szansę dostania się do próby</li>
+<li>Potrzebny <strong>operat losowania</strong></li>
+</ul>
+</section>
+<section id="dobór-prosty-losowy-1" class="slide level2">
+<h2>Dobór prosty, losowy</h2>
+<p><img data-src="img/w02_simple_random.png" /></p>
+<p><small>Obrazek pochodzi z artykułu Seemy Singh pt. <a href="https://towardsdatascience.com/sampling-techniques-a4e34111d808">Sampling Techniques</a></small></p>
+</section>
+<section id="dobór-warstwowy" class="slide level2">
+<h2>Dobór warstwowy</h2>
+<ul>
+<li>Dobór pod względem jakiejś ważnej charakterystyki</li>
+<li>Najpierw trzeba wyłonić ważne charakterystyki, co bywa trudne</li>
+<li>W obrębie warstw stosujemy dobór prosty losowy</li>
+</ul>
+</section>
+<section id="dobór-warstwowy-1" class="slide level2">
+<h2>Dobór warstwowy</h2>
+<p><img data-src="img/w02_stratified.png" /></p>
+<p><small>Obrazek pochodzi z artykułu Seemy Singh pt. <a href="https://towardsdatascience.com/sampling-techniques-a4e34111d808">Sampling Techniques</a></small></p>
+</section>
+<section id="dobór-systematyczny" class="slide level2">
+<h2>Dobór systematyczny</h2>
+<ul>
+<li>Jeśli dysponujemy populacją uszeregowaną, możemy wybrać co n-tą osobę z szeregu</li>
+<li>Często w badaniach medycznych (np. <em>co trzecia osoba rejestrująca się do onkologa w WCO</em>)</li>
+<li>Metoda dobra jeśli tylko lista nie zawiera w sobie ukrytego porządku</li>
+</ul>
+</section>
+<section id="dobór-systematyczny-1" class="slide level2">
+<h2>Dobór systematyczny</h2>
+<figure>
+<img data-src="img/w02_systematic.png" alt="Dobór systematyczny" /><figcaption aria-hidden="true">Dobór systematyczny</figcaption>
+</figure>
+<p><small>Obrazek pochodzi z artykułu Seemy Singh pt. <a href="https://towardsdatascience.com/sampling-techniques-a4e34111d808">Sampling Techniques</a></small></p>
+</section>
+<section id="dobór-przypadkowy" class="slide level2">
+<h2>Dobór przypadkowy</h2>
+<ul>
+<li>Kto się nawinie</li>
+<li>Najczęstszy przypadek w badaniach psychologicznych</li>
+<li>Może nie stanowić problemu, może stanowić ogromny problem</li>
+</ul>
+</section>
+<section id="dobór-kwotowy" class="slide level2">
+<h2>Dobór kwotowy</h2>
+<ul>
+<li>Zakładamy liczebności osób o zadanych cechach obecne w populacji</li>
+<li>Rekrutujemy badanych aż osiągniemy te liczebności</li>
+</ul>
+</section>
+<section id="kula-śniegowa" class="slide level2">
+<h2>Kula śniegowa</h2>
+<ul>
+<li>Rekrutujemy badanego, po czym każemy mu przyprowadzić ludzi podobnych do niego</li>
+<li>Zupełnie niepoprawne metodologicznie, ale czasem jest to jedyna opcja, jeśli badamy bardzo specyficzne populacje/bardzo rzadkie cechy</li>
+</ul>
+</section>
+<section id="kula-śniegowa-1" class="slide level2">
+<h2>Kula śniegowa</h2>
+<p><img data-src="img/w02_snowball.png" /></p>
+<p><small>Obrazek pochodzi z artykułu Seemy Singh pt. <a href="https://towardsdatascience.com/sampling-techniques-a4e34111d808">Sampling Techniques</a></small></p>
+</section>
+<section class="slide level2">
+
+<p>ISTNIEJE JESZCZE WIELE INNYCH METOD DOBORU PRÓBY</p>
+</section>
+<section id="skąd-wiemy-że-zależność-wykryta-w-próbie-jest-obecna-w-populacji" class="slide level2">
+<h2>Skąd wiemy, że zależność wykryta w próbie jest obecna w populacji?</h2>
+<ul>
+<li>Nawet jeśli mamy najlepszy, najbardziej reprezentatywny dobór próby…</li>
+<li>…nie wiemy (nie możemy być pewni).</li>
+<li>Możemy przypuszczać z określonym <em>prawdopodobieństwem</em>, że obserwowana przez nas zależność mogłaby wystąpić, gdyby zależność nie istniała i zależy nam na tym, by pokazać, że to prawdopodobieństwo jest znikomo małe.</li>
+<li>Do określenia tego prawdopodobieństwa potrzebujemy testów statystycznych.</li>
+<li>Wszystkie te testy zakładają, że próba została dobrana losowo, a zatem jest nieobciążona.</li>
+</ul>
+</section></section>
+<section>
+<section id="obciążenie-w-doborze-próby" class="title-slide slide level1">
+<h1>Obciążenie w doborze próby</h1>
+
+</section>
+<section id="definicja-obciązenia-próby-sampling-bias" class="slide level2">
+<h2>Definicja obciązenia próby (sampling bias)</h2>
+<ul>
+<li>Z obciążeniem w doborze próby mamy do czynienia, jeżeli jacyś członkowie naszej docelowej populacji mają mniejszą/większą szansę na udział w badaniu.</li>
+<li>W efekcie dobór nie jest losowy, ponieważ warunek tego, by dla każdej osoby z populacji prawdopodobieństwo znalezienia się w próbie było takie samo, nie jest spełniony.</li>
+</ul>
+</section>
+<section id="katalog" class="slide level2">
+<h2>Katalog</h2>
+<p><a href="https://catalogofbias.org">https://catalogofbias.org</a></p>
+</section>
+<section id="paradoks-berksona-berksons-paradox" class="slide level2">
+<h2>Paradoks Berksona (Berkson’s paradox)</h2>
+<ul>
+<li>W momencie, w którym udział w badaniu zależny jest od wystąpienia <em>przynajmniej jednej</em> z badanych zmiennych, możemy zaobserwować negatywny związek między badanymi zmiennymi (i np. niesłusznie wyciągnąć wniosek, że wystąpienie jednej choroby chroni przed wystąpieniem drugiej).</li>
+<li>Związek między dwoma zmiennymi obserwujemy ze względu na chcarakterystykę próby.</li>
+</ul>
+</section>
+<section id="oryginalny-przykład-paradoksu-berksona" class="slide level2">
+<h2>Oryginalny przykład paradoksu Berksona</h2>
+<ul>
+<li>Cukrzyca a zapalenie woreczka żółciowego wśród hospitalizowanych pacjentów. Nawet jeżeli nie ma żadnej zależności w ogólnej populacji, może stać się tak, że w badaniu pacjentów, którzy trafiają do szpitala zaobserwujemy, że cukrzyca chroni przez zapaleniem woreczka żółciowego.</li>
+<li>Osoby które nie mają ani cukrzycy, ani zapalenia woreczka żółciowego mają mniejszą szansę, by trafić do szpitala.</li>
+<li>Ergo, w grupie bez cukrzycy brakuje nam pacjentów bez zapalenia woreczka… w grupie z cukrzycą ich nie brakuje, więc może okazać się nawet, że cukrzyca chroni przed zapaleniem woreczka żółciowego.</li>
+</ul>
+</section>
+<section id="self-selection-bias" class="slide level2">
+<h2>Self selection bias</h2>
+<ul>
+<li>Błąd, z którym mamy do czynienia, kiedy osoby zmotywowane do udziału w badaniu / zgadzające się na udział różnią się istotnie od interesującej nas populacji w sposób, który może wpłynąć na wyniki badania.</li>
+<li>Przykład: badamy związek stereotypów dotyczących ról płciowych z jakąkolwiek zmienną zależną. Jest wysoce prawdopodobne, że w przypadku, w którym w badaniu będą brać udział ochotnicy, w naszej próbie znajdą się osoby o skrajnych poglądach na ten temat, co może prowadzić do zniekształcenia wyników.</li>
+</ul>
+</section>
+<section id="dobór-badanych-z-jakiejś-konkretnej-lokalizacji" class="slide level2">
+<h2>Dobór badanych z jakiejś konkretnej lokalizacji</h2>
+<ul>
+<li>Błąd wynikający z tego, że z zasady osoby w jakiejś konkretnej lokalizacji (cała klasa, cała szkoła, przechodnie w jakimś konkretnym miejscu) mogą różnić się od interesującej nas populacji.</li>
+</ul>
+</section>
+<section id="healthy-participant-bias" class="slide level2">
+<h2>Healthy participant bias</h2>
+<ul>
+<li>Ma szczególne znaczenie w badaniach związanych ze zdrowiem i badaniach epidemiologicznych.</li>
+<li>Osoby, które decydują się na udział w badaniu zwykle są nieco zdrowsze od tych, które na udział się nie decydują.</li>
+<li>Jak myślicie, jak ma się to do badań longitudinalnych i wykruszania się osób badanych z kolejnych fal badania?</li>
+</ul>
+</section>
+<section id="exclusion-bias" class="slide level2">
+<h2>Exclusion bias</h2>
+<ul>
+<li>Ma miejsce, kiedy jakaś grupa potencjalnych uczestników badania w ogóle nie ma szansy wziąć udziału w badaniu…</li>
+<li>…bo np. nie korzysta z Internetu.</li>
+</ul>
+</section>
+<section id="najważniejsze-pytanie" class="slide level2">
+<h2>Najważniejsze pytanie</h2>
+<p>CZY NASZA PRÓBA NIE RÓŻNI SIĘ PRZYPADKIEM OD INTERESUJĄCEJ NAS POPULACJI? CZY MOŻEMY UOGÓLNIAĆ NASZ WYNIK?</p>
+</section></section>
+<section>
+<section id="podsumowanie" class="title-slide slide level1">
+<h1>Podsumowanie</h1>
+
+</section>
+<section id="praktyczne-pytania-które-odbiorca-badania-powinien-sobie-zadać" class="slide level2">
+<h2>Praktyczne pytania, które odbiorca badania powinien sobie zadać</h2>
+<ul>
+<li>Czy dobór próby w badaniu miał charakter probablilistyczny czy autorzy zbadali jakąś próbę, którą akurat “mieli pod ręką”?</li>
+<li>Czy zbadane osoby mogą się różnić od interesującej nas populacji? Pod względem jakich zmiennych?</li>
+<li>Czy w/w zmienne mogą mieć wpływ na wyniki badania?</li>
+<li>Czy autorzy starali się w jakikolwiek sposób kotrolować zmienne, które mogły zakłócić wyniki badania?</li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/math/math.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>

@@ -1,0 +1,188 @@
+---
+title: Praca ze zbiorem danych
+---
+
+```{r}
+#to jest komórka, w której załadujemy potrzebne paczki.
+#przypominam, że możemy zrobić tak, by ani komórka, ani efekty jej działania nie były wyświetlane.
+#w tym celu ustawiamy include = FALSE
+library(tidyverse)
+```
+
+# Import danych
+
+Zakładamy, że plik ze zbiorem i notatnik znajdują się w tym samym folderze (polecam stworzenie projektu w R Studio, jeżeli korzystacie z wersji zainstalowanej na Waszym komputerze). Zbiór zapiszemy jako obiekt o nazwie `dane`. Warto najpierw sprawdzić, w jaki sposób rozdzielane są wartości w Waszym pliku z danymi i wykorzystać odpowiednią funkcję. Polecam skorzystanie z pomocy w R Studio.
+
+```{r}
+dane <- read_csv('data.csv') 
+```
+
+Możecie teraz podejrzeć listę kolumn (zmiennych) w konsoli, korzystając z funkcji `glimpse()`
+
+# Sprawdzamy, czy nie ma braków danych / zaskakujących wartości
+
+Sprawdźcie, czy interesujące Was zmienne mają spodziewane wartości. Możecie to zrobić korzystając z funkcji `min()`, `max()` lub `summary()` oraz `unique()`. Zrobimy to na przykładzie zmiennej o nazwie Q15 (oczywiście ze zbioru `dane`)
+
+```{r}
+#wyświetla minimalną wartość jakiejś zmiennej
+min(dane$Q15)
+```
+
+```{r}
+#wyświetla maksymalną wartość jakiejś zmiennej
+max(dane$Q15)
+```
+
+```{r}
+#wyświetla podsumowanie jakiejś zmiennej
+summary(dane$Q15)
+```
+
+```{r}
+#wyświetla unikalne wartości jakiejś zmiennej
+unique(dane$Q15)
+```
+
+Jeżeli chcecie sprawdzić, czy w jakiejś zmiennej nie ma braku, tzn. dla jakiegoś badanego wartość danej zmiennej nie jest dostępna, bo nic nie zostało wpisane, to możecie posłużyć się funkcją `anyNA()`. Funkcja zwraca wartość `FALSE`, jeżeli nie ma braku i `TRUE`, jeżeli brak jest.
+
+```{r}
+anyNA(dane$Q15)
+```
+
+Operacje te (weryfikacja zakresu wartości i obecności braków) powinniście wykonać dla każdej zmiennej, z której korzystacie.
+
+# Pozbywamy się obserwacji z nieprawidłowymi wartościami
+
+Jeżeli okaże się, że np. pojawia się 0 lub jakaś inna wartość, której być nie powinno, póki co odfiltrujcie (tzn. usuńcie ze zbioru) osoby, dla których uzyskano takie wartości. Istnieją inne sposby radzenia sobie z tym problemem, które nie prowadzą do utraty badanych, ale póki co skupimy się na najprostszym. 
+
+Korzystamy z funkcji `filter()`. Proponuję, byście odfiltrowany zbiór zapisali jako nowy obiekt, np. `dane_do_analizy`. Poniżej przykład filtrowania w oparciu o jedną zmienną. Chcemy pozbyć się wszystkich obserwacji, dla których Q1 = 0, a pozostawić te, dla których wynosi co najmniej 1. W związku z tym, że działamy na skali Likerta i dyskretnych wartościach (nie ma nic pomiędzy 0 a 1), możemy po prostu wpisać jako warunek `Q15 > 0`.
+
+Uwaga: w zbiorze zostają obserwacje, dla których warunek podany w funkcji `filter()` jest spełniony.  
+
+```{r}
+dane_do_analizy <- dane %>%
+  filter(Q15 > 0)
+```
+
+Gdbyście byli ciekawi, ile obserwacji w ten sposób zniknęło, porównajcie liczbę obserwacji w zbiorze `dane` i `dane_do_analizy`. Możecie wykorzystać do tego funkcję `nrow()` która zwraca liczbę wierszy w zbiorze.
+
+```{r}
+usuniete = nrow(dane) - nrow(dane_do_analizy)
+usuniete
+```
+
+Podobną operację musicie wykonać dla każdego pytania osobno. Nie po to uczycie się R, żeby dużo pisać :) Funkcja `filter()` pozwala na wpisanie kolejnych warunków po przecinku i dla wpisanych warunków stosuje koniunkcję, tzn. w zbiorze pozostaną obserwacje, dla których wszystkie warunki zostaną spełnione.
+
+```{r}
+ dane_do_analizy <- dane %>%
+  filter(Q1 > 0, 
+    Q2 > 0, 
+    Q3 > 0,
+    Q4 > 0,
+    Q5 > 0,
+    Q6 > 0,
+    Q7 > 0,
+    Q8 > 0,
+    Q9 > 0,
+    Q10 > 0,
+    Q11 > 0,
+    Q12 > 0,
+    Q13 > 0,
+    Q14 > 0,
+    Q15 > 0
+    ) 
+```
+
+Dla ustalenia uwagi, możecie korzystać z następujących operatorów:
+- == jest równe (np. Q15 == 0)
+- != nie jest równe (np. Q15 != 0)
+- > większy (np. Q15 > 0)
+- < mniejszy (np. Q15 < 0)
+- >= większy lub równy (np. Q15 >= 0)
+- <= mniejszy lub równy (np. Q15 <= 0)
+
+Możecie również wykorzystywać operatory logiczne, by tworzyć bardziej skomplikowane warunki, tzn.
+-  & czyli i
+-  | czyli lub
+-  ! nieprawda, że
+
+W R stwierdzenie: "nieprawda, że wartość zmiennej Q15 lub Q16 wynosi 0" będzie wyglądało tak `!(Q15 == 0 | Q16 == 0)`.
+
+Nasz filtr może wyglądać również tak:
+
+```{r}
+dane_do_analizy <- dane %>%
+  filter(!(Q1 == 0 | Q2 == 0 | Q3 == 0 | Q4 == 0 | Q5 == 0 | Q6 == 0 | Q7 == 0 | Q8 == 0 | Q9 == 0 | Q10 == 0 | Q11 == 0 | Q12 == 0 | Q13 == 0 | Q14 == 0 | Q15 == 0))
+```
+
+Jest również sprytny sposób, żeby usunąć wszystkie obserwacje, dla których WSZYSTKIE zmienne w zbiorze różnią się od 0 (żadna nie jest równa zero), ale uwaga: nie róbcie tego, chyba, że dane z kwestionariusza macie w osobnym zbiorze niż całą resztę danych. Szkoda byłoby skasować jakieś obserwacje, bo w zmiennej, która Was nie obchodzi jest 0 :) Nasze polecenie mogłoby hipotetycznie wyglądać tak: `filter_all(dane, all_vars(. != 0))`. W moim przypadku ze zbioru zostaje tylko 19 obserwacji :) Gdzieś muszą być zera :)
+
+Jest jeszcze sprytniejszy sposób! Możemy filtrować po zmiennych, które mają nazwę zgodną z podanym wzorcem. U mnie zmienne, po których chcę filtrować zaczynają się od Q (i żadna inna zmienna nie ma nazwy zaczynającej się od Q). Mogę zatem skorzystać z takiego wyrażenia:
+
+```{r}
+dane_do_analizy <- dane %>%
+  filter_at(vars(starts_with("Q")), all_vars(. != 0))
+```
+
+O sprytnych sposobach filtrowania po wielu zmiennych przeczytacie w pomocy dla funkcji `filter_all()`.
+
+# Usuwanie obserwacji z brakami
+
+W podobny spoób możemy usunąć obserwacje, w których w przynajmniej jednej zmiennej wartość jest niedostępna. U mnie akurat nie ma takiej sytuacji, ale wykonanie tej funkcji w niczym nie zaszkodzi. Korzystamy z funkcji `is.na()` (na - not avaliable), która zwraca `TRUE`, jeżeli ma do czynienia z brakiem danych (niedostępną wartością) i `FALSE`, jeżeli wartość jest dostępna. Chcemy, by w zbiorze pozostały obserwacje, w których braków nie ma, musimy więc posłużyć się zaprzeczeniem. Wykorzystujemy w tym celu operator zaprzeczenia, czyli wykrzyknik postawiony przed wyrażeniem, które może być prawdziwe albo fałszywe.
+
+Uwaga! Teraz musicie skorzystać ze zbioru `dane_do_analizy` i to z niego usunąć braki :) 
+
+```{r}
+ dane_do_analizy <- dane_do_analizy %>%
+  filter(!is.na(Q1), 
+    !is.na(Q2), 
+    !is.na(Q3),
+    !is.na(Q4),
+    !is.na(Q5),
+    !is.na(Q6),
+    !is.na(Q7),
+    !is.na(Q8),
+    !is.na(Q9),
+    !is.na(Q10),
+    !is.na(Q11),
+    !is.na(Q12),
+    !is.na(Q13),
+    !is.na(Q14),
+    !is.na(Q15)
+    ) 
+```
+
+Oczywiście możecie skorzystać też z funkcji pozwalającej na filtrowanie po wielu zmiennych:
+
+```{r}
+dane_do_analizy <- dane_do_analizy %>%
+  filter_at(vars(starts_with("Q")), all_vars(!is.na(.)))
+```
+
+
+# Odwracanie skali
+
+**Uwaga! Skalę odwracajcie po odfiltrowaniu nieprawidłowych wartości! Jeżeli zapisujecie efekt odwracania w nowej zmiennej, może to nie stanowić problemu, ale możecie sobie wprowadzić do zbioru dziwną wartość, z którą nie będziecie wiedzieli, co zrobić.**
+
+Jeżeli korzystacie ze skali zawierającej wiele pytań, zadajcie sobie pytanie, czy są w niej pozycje, które wymagają odwrócenia. W moim przypadku nie ma takich pytań. Gdyby były, ogólny wzór jest następujący:
+
+odwórcone punkty = (początek skali + liczba stopni skali) - uzyskane punkty
+
+Np. dla 5-stopniowej skali Likerta, z odpowiedziami zakodowanymi od 1 do 5, uzyskamy:
+Odwracamy 5: (1 + 5) - 5 = 1
+Odwracamy 4: (1 + 5) - 4 = 2
+itd.
+
+Polecam zapisanie wyników odwaracania w nowej zmiennej.
+
+# Zapisz nowy zbiór!
+
+Warto zapisać sobie "wyczyszczony", gotowy do analizy zbiór jako osobny plik, żeby potem zaimportować go sobie do nowego notatnika, w którym zrobicie analizy. Można to zrobić korzystając z funkcji `write_csv()`. Musicie podać nazwę zbioru i nazwę pliku z rozszerzeniem. Plik pojawi się w folderze Waszego projektu.
+
+```{r}
+write_csv(dane_do_analizy, "dane_do_analizy.csv")
+```
+
+
+
+

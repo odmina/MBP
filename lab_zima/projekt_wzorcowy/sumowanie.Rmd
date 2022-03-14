@@ -1,0 +1,39 @@
+---
+title: "Sumowanie wyników w kwestionariuszu"
+date: "12/23/2021"
+output: html_document
+---
+
+```{r}
+#załaduj tidyverse
+library(tidyverse)
+#załaduj zbiór
+dane_do_analizy <- read_csv("dane_do_analizy.csv")
+```
+
+Wyniki w kwestionariuszu można zsumować sprytniej, niż wpisując nazwy wszystkich zmiennych. Warunek jest jeden - zmienne z kwestionariusza muszą być nazwane zgodnie z jakimś wzorcem, który nie występuje w przypadku innych zmiennych. Np. jeżeli korzystalibyście z kwestionariusza HADS, który ma dwie podskale, to wszystkie pytania z podskali depresji moglibyście nazwać: hads_d_x, gdzie x to numer pytania i skorzystać z podanego niżej sposobu. 
+Bądźcie ostrożni! Jeżeli zsumujecie sobie wszystkie zmienne zaczynające się np. na "n" jak neurotyczność, bo korzystaliście ze skali neurotyczności, a w Waszym zbiorze będzie mienna "n" oznaczająca np. liczbę rodzeństwa, to dodacie liczbę rodzeństwa do wyniku w skali :)
+
+Kod, który w moich danych do analizy zsumuje wszystkie zmienne zaczynające się od "Q" (są to tylko pytania kwestionariusza), będzie wyglądał tak:
+
+```{r}
+dane_do_analizy <- dane_do_analizy %>%
+mutate(consp_score = reduce(select(., starts_with("Q")), `+`))
+```
+
+Co się wydarzyło? Popatrzcie na sekwencję nawiasów. Przy pomocy znanej Wam funkcji `mutate()` tworzycie w zbiorze zmienną `consp_score`, która będzie zawierała sumę wszystkich wskazanych dalej zmiennych (czyli wynik w kwestionariuszu). Po znaku równości macie wyrażenie `reduce(select(., starts_with("Q")), `+`)`, które zwróci tę sumę. 
+
+Funkcja `reduce()` bierze wszystkie zmienne wskazanego zbioru i wykonuje na nich podaną funckę przyjmującą dwa argumenty, aż pozostanie coś, co można zapisać jako jedną zmienną. Ergo jeżeli w moim kwestionariuszu jest 15 zmiennych, które chcę dodać, to najpierw weźmie ona pierwsze dwie i doda, potem do wyniku tej operacji doda trzecią itd. Jako pierwszy argument podajecie zbiór, na którym chcecie przeprowadzić operację (u nas w tym miejscu jest wyrażenie `select(., starts_with("Q"))` o czym zaraz), a jako drugi operację, którą chcecie przeprowadzić, w tym przypadku ``+``.
+
+Ale zaraz! W naszym zbiorze są nie tylko te zmienne, które chcemy zsumować! Dlatego właśnie `select(., starts_with("Q"))`. `select()` to funkcja, która pozwala wybrać zmienne ze zbioru. Jej pierwszym argumentem jest zbiór. W naszym przypadku wpisana została kropka, która oznacza, że korzystamy cały czas z tego samego zbioru, który został przekazany jako argument funkcji `mutate()`.  Drugi argument to zmienne, które chcemy wybrać. My wybieramy wszystkie, które zaczynają się na "Q". 
+
+Możecie podejrzeć, czy zadziałało oglądając zmienne z kwestionariusza i wynik dla pierwszych 10 obserwacji.
+
+```{r}
+head(select(dane_do_analizy, starts_with("Q"), consp_score))
+```
+
+
+Na koniec możecie zapisać zbiór z nową zmienną. Ja tę operację obliczania wyniku wykonałabym na etapie analizy, w notatniku z analizami, więc nie umieszczam tutaj linijki eksportującej zbiór, ale jeżeli chcecie skorzystać z niego w jakimś innym notatniku, pamiętajcie, żeby to zrobić.
+
+

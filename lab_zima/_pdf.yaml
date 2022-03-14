@@ -1,0 +1,23 @@
+---
+bibliography: _references.bib
+linkcolor: blue
+geometry:
+- top=35mm
+- left=25mm
+- right=25mm
+- bottom=35mm
+papersize: a4
+mainfont: Courier
+header-includes: |
+    \usepackage{polski}
+    \usepackage[polish]{babel}
+    \usepackage{fontspec}
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancyhead[R]{Metodologia Badań Psychologicznych}
+    \fancyhead[C]{}
+    \fancyhead[L]{}
+    \fancyfoot[R]{\thepage}
+    \fancyfoot[C]{}
+    \fancyfoot[L]{}
+---

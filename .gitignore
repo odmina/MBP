@@ -3,6 +3,7 @@
 
 #nie śledź kalendarza
 *.ics
+plan_lab_lato.numbers
 
 #nie śledź sublimetext
 *.sublime-project

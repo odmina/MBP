@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Małgorzata Basińska">
+  <title>temp</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/night.css" id="theme">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section>
+<section id="słowem-przypomnienia" class="title-slide slide level1">
+<h1>Słowem przypomnienia</h1>
+
+</section>
+<section id="kontekst" class="slide level2">
+<h2>Kontekst</h2>
+<p><img data-src="img/nauka_kontekst_diagram.png" /></p>
+</section>
+<section id="etapy" class="slide level2">
+<h2>Etapy</h2>
+<p><img data-src="img/science_proces.png" /></p>
+</section>
+<section id="operacjonalizacja" class="slide level2">
+<h2>Operacjonalizacja</h2>
+<p>Definiowanie zmiennej przez pryzmat obiektywnych, empirycznych wskaźników.</p>
+</section>
+<section id="zmienne" class="slide level2">
+<h2>Zmienne</h2>
+<p>Jakakolwiek własność lub cecha, która przyjmuje różne wartości u różnych ludzi, w różnych sytuacjach etc.</p>
+<ul>
+<li><em>Zmienne niezależne</em> to te, którymi badacz manipuluje lub które kontroluje w swoim badaniu.</li>
+<li><em>Zmienne zależne</em> to te, w przypadku których weryfikujemy <strong>czy ich poziom zmienia się, jeżeli zmienia się poziom zmiennej niezależnej</strong>.</li>
+</ul>
+</section>
+<section id="zmienne-a-przyczynowość" class="slide level2">
+<h2>Zmienne a przyczynowość</h2>
+<ul>
+<li>Zmienna niezależna <strong>wyjaśnia zmienność</strong> zmiennej zależnej</li>
+<li>Czasem zmienna niezależna <strong>wpływa na</strong> zmienną zależną, ale nie zawsze</li>
+</ul>
+</section></section>
+<section>
+<section id="podstawowe-rodzaje-zależności-statystycznych" class="title-slide slide level1">
+<h1>Podstawowe rodzaje zależności statystycznych</h1>
+
+</section>
+<section id="podstawowe-rodzaje-zależności-statystycznych-1" class="slide level2">
+<h2>Podstawowe rodzaje zależności statystycznych</h2>
+<ul>
+<li>Różnice pomiędzy grupami</li>
+<li>Korelacje</li>
+</ul>
+</section>
+<section id="różnice-pomiędzy-grupami---przykładowe-hipotezy" class="slide level2">
+<h2>Różnice pomiędzy grupami - przykładowe hipotezy</h2>
+<ul>
+<li>Kobiety są bardziej rozmowne niż mężczyźni</li>
+<li>Ludzie rozmawiający przez telefon w czasie jazdy samochodem gorzej prowadzą samochód niż ludzie nie rozmawiający przez telefon</li>
+<li>Ludzie z kultury amerykańskiej są bardziej indywidualistyczni niż ludzie z kultury polskiej</li>
+</ul>
+</section>
+<section id="jak-porównujemy-grupy" class="slide level2">
+<h2>Jak porównujemy grupy</h2>
+<ul>
+<li>Miary tendencji centralnej: średnia, mediana, moda</li>
+<li>Miary zmienności, rozproszenia wyników wokół średniej: odchylenie standardowe, wariancja</li>
+</ul>
+</section>
+<section id="czy-mężczyźni-są-wyżsi-niż-kobiety" class="slide level2">
+<h2>Czy mężczyźni są wyżsi niż kobiety?</h2>
+</section>
+<section id="rozkład-wzrostu-w-próbie" class="slide level2">
+<h2>Rozkład wzrostu w próbie</h2>
+<figure>
+<img data-src="figure/w06-height1-1.png" alt="plot of chunk w06-height1" /><figcaption aria-hidden="true">plot of chunk w06-height1</figcaption>
+</figure>
+</section>
+<section id="rozkład-wzrostu-w-zależności-od-płci" class="slide level2">
+<h2>Rozkład wzrostu w zależności od płci</h2>
+<figure>
+<img data-src="figure/w06-height2-1.png" alt="plot of chunk w06-height2" /><figcaption aria-hidden="true">plot of chunk w06-height2</figcaption>
+</figure>
+</section>
+<section id="czy-mężczyźni-są-wyżsi-niż-kobiety-1" class="slide level2">
+<h2>Czy mężczyźni są wyżsi niż kobiety?</h2>
+<pre><code>## `summarise()` ungrouping output (override with `.groups` argument)</code></pre>
+<figure>
+<img data-src="figure/w06-height3-1.png" alt="plot of chunk w06-height3" /><figcaption aria-hidden="true">plot of chunk w06-height3</figcaption>
+</figure>
+</section>
+<section id="czy-mężczyźni-są-wyżsi-niż-kobiety-2" class="slide level2">
+<h2>Czy mężczyźni są wyżsi niż kobiety?</h2>
+<figure>
+<img data-src="figure/w06-height4-1.png" alt="plot of chunk w06-height4" /><figcaption aria-hidden="true">plot of chunk w06-height4</figcaption>
+</figure>
+</section>
+<section id="wykres-ramka-wąsy-tukey" class="slide level2">
+<h2>Wykres ramka-wąsy (Tukey)</h2>
+<ul>
+<li><em>Box-and-whiskers plot</em></li>
+<li>W środku mediana</li>
+<li>Ramka od Q1 do Q3</li>
+<li>Wąsy od min do max <strong>bez obserwacji odstających</strong></li>
+</ul>
+</section>
+<section id="czy-mężczyźni-są-ciężsi-niż-kobiety" class="slide level2">
+<h2>Czy mężczyźni są ciężsi niż kobiety?</h2>
+<figure>
+<img data-src="figure/w06-weight1-1.png" alt="plot of chunk w06-weight1" /><figcaption aria-hidden="true">plot of chunk w06-weight1</figcaption>
+</figure>
+</section>
+<section id="korelacja" class="slide level2">
+<h2>Korelacja</h2>
+<ul>
+<li>Siła związku między zmiennymi</li>
+<li>Im silniejszy związek, tym dwie zmienne są bliżej zależności <strong>liniowej</strong></li>
+<li>Związek najczęściej wyrażony współczynnikiem korelacji</li>
+</ul>
+</section>
+<section id="współczynnik-korelacji" class="slide level2">
+<h2>Współczynnik korelacji</h2>
+<ul>
+<li>Technicznie kilka różnych, w praktyce podobna interpretacja</li>
+<li>r Pearsona, rho Spearmana, tau Kendalla</li>
+<li>Wartości od -1 do 1, im wyższa wartość bezwzględna, tym silniejszy związek</li>
+<li>Wsp. korelacji = 1 lub -1 - idealna zależność liniowa</li>
+</ul>
+</section>
+<section id="korelacje-dodatnie-i-ujemne" class="slide level2">
+<h2>Korelacje dodatnie i ujemne</h2>
+<ul>
+<li>Dodatni/pozytywny związek, r &gt; 0: wyższe wartości A wiążą się z wyższymi B</li>
+<li>Ujemny/negatywny związek, r &lt; 0: wyższe wartości A wiążą się z niższymi B</li>
+</ul>
+</section>
+<section id="waga-wiąże-się-ze-wzrostem-n100" class="slide level2">
+<h2>Waga wiąże się ze wzrostem? (N=100)</h2>
+<figure>
+<img data-src="figure/w06-cor1-1.png" alt="plot of chunk w06-cor1" /><figcaption aria-hidden="true">plot of chunk w06-cor1</figcaption>
+</figure>
+</section>
+<section id="waga-wiąże-się-ze-wzrostem-n100-1" class="slide level2">
+<h2>Waga wiąże się ze wzrostem? (N=100)</h2>
+<pre><code>## `geom_smooth()` using method = &#39;loess&#39; and formula &#39;y ~ x&#39;</code></pre>
+<figure>
+<img data-src="figure/w06-cor2-1.png" alt="plot of chunk w06-cor2" /><figcaption aria-hidden="true">plot of chunk w06-cor2</figcaption>
+</figure>
+</section>
+<section id="waga-a-wzrost-n10000" class="slide level2">
+<h2>Waga a wzrost (N=10000)</h2>
+<figure>
+<img data-src="figure/w06-cor3-1.png" alt="plot of chunk w06-cor3" /><figcaption aria-hidden="true">plot of chunk w06-cor3</figcaption>
+</figure>
+</section>
+<section id="waga-a-wzrost-n10000-1" class="slide level2">
+<h2>Waga a wzrost (N=10000)</h2>
+<pre><code>## `geom_smooth()` using method = &#39;gam&#39; and formula &#39;y ~ s(x, bs = &quot;cs&quot;)&#39;</code></pre>
+<figure>
+<img data-src="figure/w06-cor4-1.png" alt="plot of chunk w06-cor4" /><figcaption aria-hidden="true">plot of chunk w06-cor4</figcaption>
+</figure>
+</section>
+<section id="waga-wzrost-a-płeć" class="slide level2">
+<h2>Waga, wzrost a płeć?</h2>
+<figure>
+<img data-src="figure/w06-cor5-1.png" alt="plot of chunk w06-cor5" /><figcaption aria-hidden="true">plot of chunk w06-cor5</figcaption>
+</figure>
+</section>
+<section id="inne-przykłady" class="slide level2">
+<h2>Inne przykłady</h2>
+<table style="width:6%;">
+<colgroup>
+<col style="width: 5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><img data-src="figure/w06-cor6-1.png" alt="plot of chunk w06-cor6" /></td>
+</tr>
+</tbody>
+</table>
+<figure>
+<img data-src="figure/w06-cor7-1.png" alt="plot of chunk w06-cor7" /><figcaption aria-hidden="true">plot of chunk w06-cor7</figcaption>
+</figure>
+</section>
+<section class="slide level2">
+
+<figure>
+<img data-src="figure/w06-cor8-1.png" alt="plot of chunk w06-cor8" /><figcaption aria-hidden="true">plot of chunk w06-cor8</figcaption>
+</figure>
+</section>
+<section class="slide level2">
+
+<figure>
+<img data-src="figure/w06-cor9-1.png" alt="plot of chunk w06-cor9" /><figcaption aria-hidden="true">plot of chunk w06-cor9</figcaption>
+</figure>
+</section>
+<section class="slide level2">
+
+<figure>
+<img data-src="figure/w06-cor10-1.png" alt="plot of chunk w06-cor10" /><figcaption aria-hidden="true">plot of chunk w06-cor10</figcaption>
+</figure>
+</section>
+<section class="slide level2">
+
+<figure>
+<img data-src="figure/w06-cor11-1.png" alt="plot of chunk w06-cor11" /><figcaption aria-hidden="true">plot of chunk w06-cor11</figcaption>
+</figure>
+</section>
+<section class="slide level2">
+
+<figure>
+<img data-src="figure/w06-cor12-1.png" alt="plot of chunk w06-cor12" /><figcaption aria-hidden="true">plot of chunk w06-cor12</figcaption>
+</figure>
+</section></section>
+<section>
+<section id="czy-z-tą-korelacją-to-zawsze-taka-prosta-sprawa" class="title-slide slide level1">
+<h1>Czy z tą korelacją to zawsze taka prosta sprawa?</h1>
+
+</section>
+<section id="zagadka-kwartet-anscombea" class="slide level2">
+<h2>Zagadka (kwartet Anscombe’a)</h2>
+</section>
+<section class="slide level2">
+
+<figure>
+<img data-src="figure/w06-anscombe1-1.png" alt="plot of chunk w06-anscombe1" /><figcaption aria-hidden="true">plot of chunk w06-anscombe1</figcaption>
+</figure>
+</section>
+<section class="slide level2">
+
+<figure>
+<img data-src="figure/w06-anscombe2-1.png" alt="plot of chunk w06-anscombe2" /><figcaption aria-hidden="true">plot of chunk w06-anscombe2</figcaption>
+</figure>
+</section>
+<section class="slide level2">
+
+<figure>
+<img data-src="figure/w06-anscombe3-1.png" alt="plot of chunk w06-anscombe3" /><figcaption aria-hidden="true">plot of chunk w06-anscombe3</figcaption>
+</figure>
+</section>
+<section class="slide level2">
+
+<figure>
+<img data-src="figure/w06-anscombe4-1.png" alt="plot of chunk w06-anscombe4" /><figcaption aria-hidden="true">plot of chunk w06-anscombe4</figcaption>
+</figure>
+</section>
+<section id="r" class="slide level2">
+<h2>r = ?</h2>
+</section>
+<section id="r-0.816-dla-wszystkich-zbiorów" class="slide level2">
+<h2>r = 0.816 dla WSZYSTKICH zbiorów</h2>
+</section>
+<section id="jak-to-jest-możliwe" class="slide level2">
+<h2>Jak to jest możliwe?</h2>
+<ul>
+<li>Współczynnik korelacji jest czuły na związki <strong>liniowe</strong></li>
+<li>Zaburzenie liniowości powoduje “dziwne” efekty</li>
+<li>Czy można powiedzieć że we wszystkich 4 przypadkach związek jest taki sam?</li>
+</ul>
+</section>
+<section id="inne-dziwolągi-zaburzenie-liniowości" class="slide level2">
+<h2>Inne dziwolągi (zaburzenie liniowości)</h2>
+<figure>
+<img data-src="img/w02_0_corr.png" alt="r to zero!" /><figcaption aria-hidden="true">r to zero!</figcaption>
+</figure>
+</section>
+<section id="inne-dziwolągi-zaburzenie-liniowości-1" class="slide level2">
+<h2>Inne dziwolągi (zaburzenie liniowości)</h2>
+<figure>
+<img data-src="img/w02_0_corr_2.png" alt="tu też r zero!" /><figcaption aria-hidden="true">tu też r zero!</figcaption>
+</figure>
+</section></section>
+<section>
+<section id="korelacja-obserwowany-związek-a-przyczynowość" class="title-slide slide level1">
+<h1>Korelacja, obserwowany związek a przyczynowość</h1>
+
+</section>
+<section id="podstawowe-pytanie" class="slide level2">
+<h2>Podstawowe pytanie</h2>
+<ul>
+<li>Czy jeśli a koreluje z b to a <strong>spowodowało</strong> b?</li>
+<li>Być może tak…</li>
+<li>…albo nie!!!!!!!!!!</li>
+<li>Tylko na podstawie faktu, że a koreluje z b nie możemy wyciągnąć wniosków przyczynowo-skutkowych</li>
+</ul>
+</section>
+<section id="jakie-są-możliwości-przykłady-z-wikipedia.org" class="slide level2">
+<h2>Jakie są możliwości? (przykłady z wikipedia.org)</h2>
+</section>
+<section id="a-powoduje-b" class="slide level2">
+<h2>A powoduje B</h2>
+<ul>
+<li>Wiek koreluje ze wzrostem u dzieci</li>
+<li>Dziecko rośnie ponieważ się starzeje, a nie na odwrót</li>
+</ul>
+</section>
+<section id="b-powoduje-a" class="slide level2">
+<h2>B powoduje A</h2>
+<ul>
+<li>Im szybciej kręcą się wiatraki, tym wiatr wieje szybciej…</li>
+<li>Więc wiatraki powodują wiatr</li>
+<li>…</li>
+<li>…mamy dobre argumenty, żeby sądzić, że jest dokładnie na odwrót</li>
+</ul>
+</section>
+<section id="b-powoduje-a-1" class="slide level2">
+<h2>B powoduje A</h2>
+<ul>
+<li>Ludzie w średniowieczu wierzyli, że posiadanie wszy jest gwarancją życia w dobrym zdrowiu</li>
+<li>Obserwacja: bardzo rzadko można zaobserwować wszy na chorym człowieku</li>
+<li>???</li>
+<li>Wszy okazują się być bardzo wrażliwe na temperaturę. Przy najmniejszym stanie podgorączkowym uciekają</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Spanie w butach jest silnie skorelowane z bólem głowy po przebudzeniu</li>
+<li>?</li>
+</ul>
+</section>
+<section id="trzeci-czynnik-c-powoduje-a-i-b" class="slide level2">
+<h2>Trzeci czynnik C powoduje A i B</h2>
+<ul>
+<li>Pijaństwo powoduje spanie w butach</li>
+<li>Pijaństwo powoduje ból głowy po przebudzeniu</li>
+</ul>
+</section>
+<section id="trzeci-czynnik-c-powoduje-a-i-b-1" class="slide level2">
+<h2>Trzeci czynnik C powoduje A i B</h2>
+<ul>
+<li>Spożycie lodów jest silnie dodatnio skorelowane z liczbą zgonów w wyniku utonięcia</li>
+<li>?</li>
+<li>Wzrost temperatury powoduje wzrost spożycia lodów. Wzrost temperatury powoduje, że więcej ludzi się kąpie i, w konsekwencji, więcej jest utonięć</li>
+</ul>
+</section>
+<section id="a-powoduje-b-a-b-powoduje-a-zależności-cykliczne-sprzężenia-zwrotne" class="slide level2">
+<h2>A powoduje B a B powoduje A (zależności cykliczne, sprzężenia zwrotne)</h2>
+<ul>
+<li>Rowerzyści mają niższe BMI niż ludzie nie jeżdżący na rowerze</li>
+<li>Czy jazda na rowerze obniża BMI?</li>
+<li>Czy niskie BMI sprzyja jeżdżeniu na rowerze?</li>
+</ul>
+</section>
+<section id="dodatnie-i-ujemne-sprzężenia-zwrotne-feedback-loops" class="slide level2">
+<h2>Dodatnie i ujemne sprzężenia zwrotne (<em>feedback loops</em>)</h2>
+<ul>
+<li>Dodatnie sprzężenie zwrotne:
+<ul>
+<li>wzrost A powoduje wzrost B</li>
+<li>wzrost B powoduje wzrost A</li>
+<li>wzrost A powoduje wzrost B</li>
+<li>itd.</li>
+<li>obie zmienne wzrastają</li>
+</ul></li>
+</ul>
+</section>
+<section id="dodatnie-i-ujemne-sprzężenia-zwrotne-feedback-loops-1" class="slide level2">
+<h2>Dodatnie i ujemne sprzężenia zwrotne (<em>feedback loops</em>)</h2>
+<ul>
+<li>Ujemne sprzężenie zwrotne:
+<ul>
+<li>spadek A powoduje spadek B</li>
+<li>spadek B powoduje spadek A</li>
+<li>spadek A powoduje spadek B</li>
+<li>itd.</li>
+<li>obie zmienne maleją</li>
+</ul></li>
+</ul>
+</section>
+<section id="sprzężenia-zwrotne" class="slide level2">
+<h2>Sprzężenia zwrotne</h2>
+<ul>
+<li>Depresja i ból</li>
+<li>Fear avoidance model of chronic pain</li>
+<li>Nieśmiałość i lęk</li>
+</ul>
+</section></section>
+<section>
+<section id="kilka-przykładów-tego-że-korelacja-i-przyczynowość-nie-idą-w-parze" class="title-slide slide level1">
+<h1>Kilka przykładów tego, że korelacja i przyczynowość nie idą w parze</h1>
+
+</section>
+<section class="slide level2">
+
+<ul>
+<li>Wynik ostatniego domowego meczu Washington Redskins przed wyborami prezydenckimi w USA był wprost skorelowany z wynikiem wyborów (od 1936 do 2000)</li>
+<li>Od 200 lat przywódcy Rosji/Związku Radzieckiego są na zmianę łysiejący i “włochaci”</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<figure>
+<img data-src="img/w02_russia.png" alt="Przywódcy Zwiazku Radzieckiego/Rosji" /><figcaption aria-hidden="true">Przywódcy Zwiazku Radzieckiego/Rosji</figcaption>
+</figure>
+</section>
+<section class="slide level2">
+
+<figure>
+<img data-src="img/w02_spurious/chart-1.png" alt="Hm…" /><figcaption aria-hidden="true">Hm…</figcaption>
+</figure>
+<p><small>Wykres pochodzi z <a href="http://tylervigen.com/spurious-correlations">http://tylervigen.com/spurious-correlations</a>,<br />
+<a href="https://creativecommons.org/licenses/by/4.0/">creative commons license</a></small></p>
+</section>
+<section class="slide level2">
+
+<figure>
+<img data-src="img/w02_spurious/chart-2.png" alt="Hm…" /><figcaption aria-hidden="true">Hm…</figcaption>
+</figure>
+<p><small>Wykres pochodzi z <a href="http://tylervigen.com/spurious-correlations">http://tylervigen.com/spurious-correlations</a>,<br />
+<a href="https://creativecommons.org/licenses/by/4.0/">creative commons license</a></small></p>
+</section>
+<section class="slide level2">
+
+<figure>
+<img data-src="img/w02_spurious/chart-3.png" alt="Hm…" /><figcaption aria-hidden="true">Hm…</figcaption>
+</figure>
+<p><small>Wykres pochodzi z <a href="http://tylervigen.com/spurious-correlations">http://tylervigen.com/spurious-correlations</a>,<br />
+<a href="https://creativecommons.org/licenses/by/4.0/">creative commons license</a></small></p>
+</section>
+<section class="slide level2">
+
+<figure>
+<img data-src="img/w02_spurious/chart-4.png" alt="Hm…" /><figcaption aria-hidden="true">Hm…</figcaption>
+</figure>
+<p><small>Wykres pochodzi z <a href="http://tylervigen.com/spurious-correlations">http://tylervigen.com/spurious-correlations</a>,<br />
+<a href="https://creativecommons.org/licenses/by/4.0/">creative commons license</a></small></p>
+</section>
+<section class="slide level2">
+
+<figure>
+<img data-src="img/w02_spurious/chart-5.png" alt="Hm…" /><figcaption aria-hidden="true">Hm…</figcaption>
+</figure>
+<p><small>Wykres pochodzi z <a href="http://tylervigen.com/spurious-correlations">http://tylervigen.com/spurious-correlations</a>,<br />
+<a href="https://creativecommons.org/licenses/by/4.0/">creative commons license</a></small></p>
+</section>
+<section class="slide level2">
+
+<figure>
+<img data-src="img/w02_spurious/chart-6.png" alt="Hm…" /><figcaption aria-hidden="true">Hm…</figcaption>
+</figure>
+<p><small>Wykres pochodzi z <a href="http://tylervigen.com/spurious-correlations">http://tylervigen.com/spurious-correlations</a>,<br />
+<a href="https://creativecommons.org/licenses/by/4.0/">creative commons license</a></small></p>
+</section>
+<section class="slide level2">
+
+<figure>
+<img data-src="img/w02_spurious/chart-7.png" alt="Hm…" /><figcaption aria-hidden="true">Hm…</figcaption>
+</figure>
+<p><small>Wykres pochodzi z <a href="http://tylervigen.com/spurious-correlations">http://tylervigen.com/spurious-correlations</a>,<br />
+<a href="https://creativecommons.org/licenses/by/4.0/">creative commons license</a></small></p>
+</section>
+<section id="dlaczego" class="slide level2">
+<h2>DLACZEGO?</h2>
+<ul>
+<li>Bo tak wyszło</li>
+<li>Nigdy nie mamy pewności, czy wykryta korelacja nie jest przypadkowa</li>
+</ul>
+</section></section>
+<section>
+<section id="podsumowanie" class="title-slide slide level1">
+<h1>Podsumowanie</h1>
+
+</section>
+<section id="literatura" class="slide level2">
+<h2>Literatura</h2>
+<p><small></p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  // reveal.js plugins
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/math/math.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>

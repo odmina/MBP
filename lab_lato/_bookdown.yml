@@ -15,5 +15,6 @@ rmd_files: ["index.Rmd",
 "lab12.md",
 "lab13.md",
 "lab14.md",
-"lab15.md"]
+"lab15.md",
+"refs.md"]
 output_dir: MBP_labs

@@ -4,7 +4,7 @@
 
 **WASZE ZADANIE**
 
-Wybierzcie narzędzia, które wykorzystacie do pomiaru zmiennych uwzględnionych w Waszej hipotezie.
+Wybierzcie narzędzia, które wykorzystacie do pomiaru zmiennych uwzględnionych w Waszej hipotezie. Na zajęciach będziecie musieli je krótko przedstawić, podając liczbę pytań, rodzaj pytań i udzielanych w nich odpowiedzi, zakres wyników możliwych do uzyskania. Znajdźcie również informację o rzetelności narzędzia. Opiszcie, na jakiej podstawie stwierdziliście, że możecie skorzystać z tych narzędzi w swoim badaniu (zakładam, że wybraliście narzędzia, z których rzeczywiście możecie skorzystać).
 
 :::
 
@@ -77,9 +77,46 @@ Kwestionariusze psychologiczne to utwory objęte prawem autorskim. Co to oznacza
 2. Zweryfikujcie, w jaki sposób udostępniony został kwestionariusz, czy są dostępne dane o licencji.
 3. Jeżeli chcecie skorzystać z kwestionariusza udostępnionego w książce lub artykule naukowym, powinniście napisać do autorów i zapytać o zgodę. 
 
-## Rzetelność i trafność pomiaru {lab-05-rz-t}
+## Rzetelność i trafność pomiaru {#lab-05-rz-t}
+
+Samo opracowanie lub przetłumaczenie testu psychologicznego nie gwarantuje nam, że będzie on działał tak, jak to zaplanowaliśmy. Użytkownicy opracowanego narzędzia mają prawo (i powinni!) oczekiwać od autora, że udowodni on, że opracowany test mierzy z satysfakcjonującą dokładnością, czyli jest rzetelny. Oprócz tego autor musi udowodnić, że jego test mierzy to, co w założeniu ma mierzyć, to znaczy jest trafny.
+
+Zanim przejdziemy do zagadnienia trafności i rzetelności warto jeszcze wspomnieć, co to jest test psychologiczny. Poniżej definicja pochodząca ze *Standardów dla testów stosowanych w psychologii i pedagogice* [@standardy], czyli źródła, które powinien znać każdy użytkownik testów:
+
+>Narzędzie lub procedura pozwalające  
+>na otrzymanie próbki zachowań osoby badanej  
+>w określonej dziedzinie oraz na standaryzowany  
+>sposób ich oceny lub punktacji.
 
 ### Rzetelność
 
+Poniżej definicja rzetelności wg wspomnianych już *Standardów* [@standardy]:
+
+>Stopień, w jakim wyniki testowe otrzymane dla  
+>grupy osób są stabilne oraz nie zmieniają się  
+>w kolejnych badaniach tym samym testem;  
+>mogą być uznane za powtarzalne i rzetelne dla osoby badanej;  
+>także stopień, w jakim wyniki testowe są wolne  
+>od błędu pomiaru dla danej grupy.
+
+Za każdym razem, gdy chcecie wiedzieć, czy test jest rzetelny, musicie ocenić, czy jego autorzy w badaniach walidacyjnych przekonali Was, że poszczególne pozycje tej definicji są spełnione.
+
+Poniżej podstawowe sposoby badania rzetelności:
+
+- w przypadku testów, których ocenaa jest skomplikowana, ocena tego samego materiału przez dwóch sędziów i obliczenie, w jakim stopniu oceny te są zgodne;
+- dwukrotne badanie tej samej grupy osób tym samym testem (technika test - retest) i obliczenie współczynnika korelacji;
+- ocena korelacji między połówkami testu;
+- ocena korelacji między alternatywnymi wersjami testu;
+- ocena zgodności wewnętrznej, tzn. tego, w jakim stopniu wszystkie pozycje testu mierzą to samo.
+
+Wszystkie współczynniki rzetelności przyjmują wartość od 0 do 1, gdzie 1 oznacza idealnie rzetelny test. Uwaga: idealnie rzetelnych testów nie ma!
+
 ### Trafność
+
+Definicja trafności wg *Standardów* [@standardy]
+
+>TRAFNOŚĆ to stopień, w jakim zebrane dane  
+>oraz teoria uzasadniają interpretację wyników  
+>testowych, zgodną z proponowanym 
+>zastosowaniem testu.
 

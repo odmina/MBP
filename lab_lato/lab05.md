@@ -61,7 +61,7 @@ Starsze wersje licencji CC (3.0) miały swoje wersje wersje językowe (wydaje mi
 
 **ĆWICZENIE**
 
-Treści udostępniane na stronie [badania.net](badania.net) są udostępniane w oparciu o licencję [CC BY-SA 3.0 PL](https://creativecommons.org/licenses/by-sa/3.0/pl/). Co musicie zrobić, by zgodnie z tą licencją wykorzystać w swoim badaniu on-line kwestionariusz udostępniony na stronie?
+Treści udostępniane na stronie [badania.net](badania.net) są udostępniane w oparciu o licencję [CC BY-NC-SA 3.0 PL](https://creativecommons.org/licenses/by-nc-sa/3.0/pl/). Co musicie zrobić, by zgodnie z tą licencją wykorzystać w swoim badaniu on-line kwestionariusz udostępniony na stronie?
 
 :::
 

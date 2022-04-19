@@ -58,5 +58,5 @@ Na początku każdego z rozdziałów tej książki znajdziecie informację o lit
 - Na zajęcia 7 macie mieć gotowe badanie tak, by można było rozpocząć zbieranie danych.
 - Nie będę kontrolować tego, kiedy zbierzecie dane, ale w Waszym interesie jest, by na zajęcia 9 mieć zebraną chociaż część (najlepiej większą) danych i do zajęć 10-11 skończyć zbieranie.
 - Na 14 zajęcia macie mieć gotowy artykuł oraz krótką prezentację na zajęcia (mają być slajdy).
-- Na 13 zajęciach będzie krótkie kolokwium z praktycznymi zadaniami.
+- Na 12 zajęciach będzie krótkie kolokwium z praktycznymi zadaniami.
 

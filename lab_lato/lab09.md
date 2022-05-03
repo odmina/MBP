@@ -1,4 +1,4 @@
-# Wykresy
+# Wykresy {#lab09}
 
 :::{.box}
 
@@ -12,7 +12,7 @@ Jeżeli chcielibyście zająć się wizualizacją danych, w książce [R Graphic
 
 Po co tworzymy wykresy? Sztampowe uzasadnienie to "jeden wykres wart jest tysiąc słów". A tak poważnie, zanim przystąpicie do statystycznej analizy, **MUSICIE** wiedzieć, jak wyglądają Wasze dane. Zanim zastanowicie się, czy jakaś zależność jest statystycznie istotna, musicie wiedzieć, jaka ona jest. Szybciej zobaczycie to na wykresie, niż spoglądając na "gołe" liczby. Poza tym niektóre podsumowania liczbowe nie mają sensu dla danych o określonych właściwościach. Pamiętacie [kwartet Anscombe'a](https://pl.wikipedia.org/wiki/Kwartet_Anscombe’a)?
 
-## Podstawy
+## Podstawy {#lab09-podstawy}
 
 
 

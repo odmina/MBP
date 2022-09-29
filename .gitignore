@@ -9,9 +9,6 @@ plan_lab_lato.numbers
 *.sublime-project
 *.sublime-workspace
 
-#nie śledź revealjs (folder, rekursywnie)
-reveal.js/
-
 #nie sledź logów
 *.log
 

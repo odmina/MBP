@@ -5,4 +5,5 @@ csl: _apa.csl
 css: _styles.css
 bibliography: _references.bib
 slide-level: 2
+revealjs-url: reveal.js
 ---
